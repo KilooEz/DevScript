@@ -5459,7 +5459,7 @@ function PassS1()
 		 "Security",
 		 "Skadi",
 		 "Prominence",
-		 "See You Later Alligator"
+		 "See You Later Alligator",
          "🔙"
        }, nil, (os["date"]([[Select Skin:]])))
        if SmokeTier5Change == nil then
