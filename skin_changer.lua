@@ -382,7 +382,13 @@ gg.refineNumber("ED2400007A250000r",gg.TYPE_QWORD)
  scarh = gg.getResults(100)
  gg.addListItems(scarh)
  gg.clearResults()
-
+--KSG
+gg.searchNumber("19230000ED240000r;ED2400007A250000r;7A25000000000000r:9",gg.TYPE_QWORD)
+gg.getResults(100)
+gg.refineNumber("7A25000000000000r",gg.TYPE_QWORD)
+ ksg = gg.getResults(100)
+ gg.addListItems(ksg)
+ gg.clearResults()
  
 
 
@@ -547,7 +553,7 @@ if gg.isPackageInstalled("sstool.only.com.sstool") then
   os.exit() end
 
  function HOME()
- gg.toast('ʙʏ: 𝟎𝟕𝟕 𝕴𝖈𝖊𝖒𝖔𝖉𝖘#0777 & ᴀʀꜱᴋɪᴢ#3864 & xʏᴄʀᴏ#8113')
+ gg.toast('ʙʏ: ᴀʀꜱᴋɪᴢ#3864')
        Mn = gg["multiChoice"]({
          "『🧤』 | sᴋɪɴ ᴄʜᴀɴɢᴇʀ",
          "『👨‍💻』 | ᴄʜᴇᴀᴛꜱ    ",
@@ -557,7 +563,7 @@ if gg.isPackageInstalled("sstool.only.com.sstool") then
          "『🚪』 | ʟᴇᴀᴠᴇ    "
        }, nil, (os["date"]([[>────────────────< 
 | - ᴄʀᴇᴀᴛᴇᴅ ʙʏ: ᴋɪʟᴏᴏ 
-| - ᴠᴇʀsɪᴏɴ: 1.32.F1790
+| - ᴠᴇʀsɪᴏɴ: 1.35.F1997
 | - ᴍᴏᴅᴇ: 64-ʙɪᴛ
 >────────────────<]])))
        if Mn == nil then
@@ -647,8 +653,6 @@ end
 		if Mn[5] == true then
 gg.alert([[
 													ℹ️ Creators ℹ️
-❄️ 077 IceModz - Cheats
-🔥 Xycro - Cheats
 🧤 Arskiz - Skin Changer & Script
 ]])
 end
@@ -702,6 +706,7 @@ end
 		 "『✅』 | Super 90",
 		 "『✅』 | M1887",
 		 "『✅』 | MP7",
+		 "『✅』 | KSG",
 		 "『✅』 | Frag Grenade",
 		 "『✅』 | Flash Grenade",
 		 "『✅』 | Smoke Grenade",
@@ -807,34 +812,37 @@ end
            MP7Changer()
 		 end
 		 if SkinChange[30] == true then
+			KSGChanger()
+		  end
+		 if SkinChange[31] == true then
            FragChanger()
          end
-		 if SkinChange[31] == true then
+		 if SkinChange[32] == true then
            FlashChanger()
          end
-		 if SkinChange[32] == true then
+		 if SkinChange[33] == true then
            SmokeChanger()
          end
-		 if SkinChange[33] == true then
+		 if SkinChange[34] == true then
            Insta()
          end
-		 if SkinChange[34] == true then
+		 if SkinChange[35] == true then
            Theme()
          end
-		 if SkinChange[35] == true then
+		 if SkinChange[36] == true then
            Case()
          end
-		 if SkinChange[36] == true then
+		 if SkinChange[37] == true then
 		 gg.alert([[
 		 ɴᴏᴛᴇ!
 		 - ɪɴᴄᴏʀʀᴇᴄᴛ ɪᴅ ᴡɪʟʟ ʀᴇꜱᴜʟᴛ ɪɴ ᴀ ᴄʀᴀꜱʜ!
 		 - ᴏɴʟʏ ᴄʜᴏᴏꜱᴇ 1 ᴡᴇᴀᴘᴏɴ ꜰʀᴏᴍ ᴛʜᴇ ʟɪꜱᴛ!]])
            manual()
          end
-		 if SkinChange[37] == true then
+		 if SkinChange[38] == true then
            Risky()
          end
-		 if SkinChange[38] == true then
+		 if SkinChange[39] == true then
            HOME()
          end
        end
@@ -1238,137 +1246,141 @@ end
 
 function manual()
 local prompt1 = gg.prompt({
-'┗Knife',
-'┗CT Gloves', --1
-'┗T Gloves', --2
-'┗P250', --3
-'┗GSR 1911', --4
-'┗Mr96', --5
-'┗XD45', --6
-'┗Deagle', --7
-'┗Dual MTX', --8
-'┗SA58', --9
-'┗AK47', --10
-'┗M4', --11
-'┗HK417', --12
-'┗SG 551', --13
-'┗AUG', --14
-'┗AR-15', --15
-'┗Scar-H', --15
-'┗Vector', --16
-'┗P90', --17
-'┗MP5', --18
-'┗MPX', --19
-'┗Uratio', --20
-'┗Trg', --21
-'┗Svd', --22
-'┗M14', --23
-'┗Fp6', --24
-'┗Super 90', --25
-'┗M1887', --26
-'┗MP7', --127
-'┗Frag Grenade', --28
-'┗Flash Grenade', --29
-'┗Smoke Grenade', --30
+'┗Knife', --1
+'┗CT Gloves', --2
+'┗T Gloves', --3
+'┗P250', --4
+'┗GSR 1911', --5
+'┗Mr96', --6
+'┗XD45', --7
+'┗Deagle', --8
+'┗Dual MTX', --9
+'┗SA58', --10
+'┗AK47', --11
+'┗M4', --12
+'┗HK417', --13
+'┗SG 551', --14
+'┗AUG', --15
+'┗AR-15', --16
+'┗Scar-H', --17
+'┗Vector', --18
+'┗P90', --19
+'┗MP5', --20
+'┗MPX', --21
+'┗Uratio', --22
+'┗Trg', --23
+'┗Svd', --24
+'┗M14', --25
+'┗Fp6', --26
+'┗Super 90', --27
+'┗M1887', --28
+'┗MP7', --29
+'┗KSG', --30
+'┗Frag Grenade', --31
+'┗Flash Grenade', --32
+'┗Smoke Grenade', --33
 }, nil, {'checkbox', 'checkbox', 'checkbox', 'checkbox','checkbox','checkbox', 'checkbox', 'checkbox', 'checkbox','checkbox','checkbox', 'checkbox', 'checkbox', 'checkbox','checkbox','checkbox', 'checkbox', 'checkbox', 'checkbox','checkbox','checkbox', 'checkbox', 'checkbox', 'checkbox','checkbox','checkbox', 'checkbox', 'checkbox', 'checkbox','checkbox','checkbox'})
 if prompt1 == nil then
  gg.alert('Canceled')
 else
  if prompt1[1] then
-  gun = "1" id()
+  gun = "knife" id()
  end
  if prompt1[2] then
-  gun = "2" id()
+  gun = "ctgloves" id()
  end
  if prompt1[3] then
-  gun = "3" id()
+  gun = "tgloves" id()
  end
  if prompt1[4] then
-  gun = "4" id()
+  gun = "p250" id()
  end
  if prompt1[5] then
-  gun = "5" id()
+  gun = "gsr" id()
  end
  if prompt1[6] then
-  gun = "6" id()
+  gun = "mr96" id()
  end
  if prompt1[7] then
-  gun = "7" id()
+  gun = "xd45" id()
  end
  if prompt1[8] then
-  gun = "8" id()
+  gun = "deagle" id()
  end
  if prompt1[9] then
-  gun = "9" id()
+  gun = "dualmtx" id()
  end
  if prompt1[10] then
- gun = "10" id()
+ gun = "sa58" id()
  end
  if prompt1[11] then
-  gun = "11" id()
+  gun = "ak47" id()
  end
  if prompt1[12] then
-  gun = "12" id()
+  gun = "m4" id()
  end
  if prompt1[13] then
-  gun = "13" id()
+  gun = "hk417" id()
  end
  if prompt1[14] then
-  gun = "14" id()
+  gun = "sg551" id()
  end
  if prompt1[15] then
-  gun = "15" id()
+  gun = "aug" id()
  end
  if prompt1[16] then
-  gun = "16" id()
+  gun = "ar15" id()
  end
  if prompt1[17] then
-  gun = "999" id()
+  gun = "scarh" id()
  end
  if prompt1[18] then
- gun = "17" id()
+ gun = "vector" id()
  end
  if prompt1[19] then
- gun = "18" id()
+ gun = "p90" id()
  end
  if prompt1[20] then
-  gun = "19" id()
+  gun = "mp5" id()
  end
  if prompt1[21] then
- gun = "20" id()
+ gun = "mpx" id()
  end
  if prompt1[22] then
- gun = "21" id()
+ gun = "uratio" id()
  end
  if prompt1[23] then
- gun = "22" id()
+ gun = "trg" id()
  end
  if prompt1[24] then
- gun = "23" id()
+ gun = "svd" id()
  end
  if prompt1[25] then
-  gun = "24" id()
+  gun = "m14" id()
  end
  if prompt1[26] then
- gun = "25" id()
+ gun = "fp6" id()
  end
  if prompt1[27] then
- gun = "26" id()
+ gun = "super90" id()
  end
  if prompt1[28] then
- gun = "27" id()
+ gun = "m1887" id()
  end
  if prompt1[29] then
-  gun = "28" id()
+  gun = "mp7" id()
  end
  if prompt1[30] then
- gun = "29" id()
- end
+	gun = "ksg" id()
+   end
  if prompt1[31] then
-  gun = "30" id()
+ gun = "frag" id()
  end
  if prompt1[32] then
-  gun = "31" id()
+  gun = "flash" id()
+ end
+ if prompt1[33] then
+  gun = "smoke" id()
  end
 end
 end
@@ -1380,7 +1392,7 @@ local id2 = gg.prompt({
 if id2 == nil then
  gg.alert('Canceled')
 else
- if id2[1] and gun == "1" then
+ if id2[1] and gun == "knife" then
   gg.getListItems(skin)
   skin[1].flags = gg.TYPE_DWORD
   skin[1].value = id2[1]
@@ -1388,7 +1400,7 @@ else
   gg.setValues(skin)
   gg.clearResults()
  end
- if id2[1] and gun == "2" then
+ if id2[1] and gun == "ctgloves" then
   gg.getListItems(ct)
   ct[1].flags = gg.TYPE_DWORD
   ct[1].value = id2[1]
@@ -1396,7 +1408,7 @@ else
   gg.setValues(ct)
   gg.clearResults()
  end
- if id2[1] and gun == "3" then
+ if id2[1] and gun == "tgloves" then
   gg.getListItems(t)
   t[1].flags = gg.TYPE_DWORD
   t[1].value = id2[1]
@@ -1404,7 +1416,7 @@ else
   gg.setValues(t)
   gg.clearResults()
  end
- if id2[1] and gun == "4" then
+ if id2[1] and gun == "p250" then
   gg.getListItems(p250)
   p250[1].flags = gg.TYPE_DWORD
   p250[1].value = id2[1]
@@ -1412,7 +1424,7 @@ else
   gg.setValues(p250)
   gg.clearResults()
  end
- if id2[1] and gun == "5" then
+ if id2[1] and gun == "gsr" then
   gg.getListItems(gsr)
   gsr[1].flags = gg.TYPE_DWORD
   gsr[1].value = id2[1]
@@ -1420,7 +1432,7 @@ else
   gg.setValues(gsr)
   gg.clearResults()
  end
- if id2[1] and gun == "6" then
+ if id2[1] and gun == "mr96" then
   gg.getListItems(mr96)
   mr96[1].flags = gg.TYPE_DWORD
   mr96[1].value = id2[1]
@@ -1428,7 +1440,7 @@ else
   gg.setValues(mr96)
   gg.clearResults()
  end
- if id2[1] and gun == "7" then
+ if id2[1] and gun == "xd45" then
   gg.getListItems(xd)
   xd[1].flags = gg.TYPE_DWORD
   xd[1].value = id2[1]
@@ -1436,7 +1448,7 @@ else
   gg.setValues(xd)
   gg.clearResults()
  end
- if id2[1] and gun == "8" then
+ if id2[1] and gun == "deagle" then
   gg.getListItems(de)
   de[1].flags = gg.TYPE_DWORD
   de[1].value = id2[1]
@@ -1444,7 +1456,7 @@ else
   gg.setValues(de)
   gg.clearResults()
  end
- if id2[1] and gun == "9" then
+ if id2[1] and gun == "dualmtx" then
   gg.getListItems(mtx)
   mtx[1].flags = gg.TYPE_DWORD
   mtx[1].value = id2[1]
@@ -1452,7 +1464,7 @@ else
   gg.setValues(mtx)
   gg.clearResults()
  end
- if id2[1] and gun == "10" then
+ if id2[1] and gun == "sa58" then
  gg.getListItems(sa)
   sa[1].flags = gg.TYPE_DWORD
   sa[1].value = id2[1]
@@ -1460,7 +1472,7 @@ else
   gg.setValues(sa)
   gg.clearResults()
  end
- if id2[1] and gun == "11" then
+ if id2[1] and gun == "ak47" then
   gg.getListItems(ak)
   ak[1].flags = gg.TYPE_DWORD
   ak[1].value = id2[1]
@@ -1468,7 +1480,7 @@ else
   gg.setValues(ak)
   gg.clearResults()
  end
- if id2[1] and gun == "12" then
+ if id2[1] and gun == "m4" then
   gg.getListItems(m4)
   m4[1].flags = gg.TYPE_DWORD
   m4[1].value = id2[1]
@@ -1476,7 +1488,7 @@ else
   gg.setValues(m4)
   gg.clearResults()
  end
- if id2[1] and gun == "13" then
+ if id2[1] and gun == "hk417" then
   gg.getListItems(hk)
   hk[1].flags = gg.TYPE_DWORD
   hk[1].value = id2[1]
@@ -1484,7 +1496,7 @@ else
   gg.setValues(hk)
   gg.clearResults()
  end
- if id2[1] and gun == "14" then
+ if id2[1] and gun == "sg551" then
   gg.getListItems(sg)
   sg[1].flags = gg.TYPE_DWORD
   sg[1].value = id2[1]
@@ -1492,7 +1504,7 @@ else
   gg.setValues(sg)
   gg.clearResults()
  end
- if id2[1] and gun == "15" then
+ if id2[1] and gun == "aug" then
   gg.getListItems(aug)
   aug[1].flags = gg.TYPE_DWORD
   aug[1].value = id2[1]
@@ -1500,7 +1512,7 @@ else
   gg.setValues(aug)
   gg.clearResults()
  end
- if id2[1] and gun == "16" then
+ if id2[1] and gun == "ar15" then
   gg.getListItems(ar)
   ar[1].flags = gg.TYPE_DWORD
   ar[1].value = id2[1]
@@ -1508,7 +1520,7 @@ else
   gg.setValues(ar)
   gg.clearResults()
  end
- if id2[1] and gun == "17" then
+ if id2[1] and gun == "vector" then
  gg.getListItems(vr)
   vr[1].flags = gg.TYPE_DWORD
   vr[1].value = id2[1]
@@ -1516,7 +1528,7 @@ else
   gg.setValues(vr)
   gg.clearResults()
  end
- if id2[1] and gun == "18" then
+ if id2[1] and gun == "p90" then
  gg.getListItems(p90)
   p90[1].flags = gg.TYPE_DWORD
   p90[1].value = p90[1]
@@ -1524,7 +1536,7 @@ else
   gg.setValues(p90)
   gg.clearResults()
  end
- if id2[1] and gun == "19" then
+ if id2[1] and gun == "mp5" then
   gg.getListItems(mp5)
   mp5[1].flags = gg.TYPE_DWORD
   mp5[1].value = id2[1]
@@ -1532,7 +1544,7 @@ else
   gg.setValues(mp5)
   gg.clearResults()
  end
- if id2[1] and gun == "20" then
+ if id2[1] and gun == "mpx" then
  gg.getListItems(mpx)
   mpx[1].flags = gg.TYPE_DWORD
   mpx[1].value = id2[1]
@@ -1540,7 +1552,7 @@ else
   gg.setValues(mpx)
   gg.clearResults()
  end
- if id2[1] and gun == "21" then
+ if id2[1] and gun == "uratio" then
  gg.getListItems(ur)
   ur[1].flags = gg.TYPE_DWORD
   ur[1].value = id2[1]
@@ -1548,7 +1560,7 @@ else
   gg.setValues(ur)
   gg.clearResults()
  end
- if id2[1] and gun == "22" then
+ if id2[1] and gun == "trg" then
  gg.getListItems(trg)
   trg[1].flags = gg.TYPE_DWORD
   trg[1].value = id2[1]
@@ -1556,7 +1568,7 @@ else
   gg.setValues(trg)
   gg.clearResults()
  end
- if id2[1] and gun == "23" then
+ if id2[1] and gun == "svd" then
  gg.getListItems(svd)
   svd[1].flags = gg.TYPE_DWORD
   svd[1].value = id2[1]
@@ -1564,7 +1576,7 @@ else
   gg.setValues(svd)
   gg.clearResults()
  end
- if id2[1] and gun == "24" then
+ if id2[1] and gun == "m14" then
   gg.getListItems(m14)
   m14[1].flags = gg.TYPE_DWORD
   m14[1].value = id2[1]
@@ -1572,7 +1584,7 @@ else
   gg.setValues(m14)
   gg.clearResults()
  end
- if id2[1] and gun == "25" then
+ if id2[1] and gun == "fp6" then
  gg.getListItems(fp6)
   fp6[1].flags = gg.TYPE_DWORD
   fp6[1].value = id2[1]
@@ -1580,7 +1592,7 @@ else
   gg.setValues(fp6)
   gg.clearResults()
  end
- if id2[1] and gun == "26" then
+ if id2[1] and gun == "super90" then
  gg.getListItems(s90)
   s90[1].flags = gg.TYPE_DWORD
   s90[1].value = id2[1]
@@ -1588,7 +1600,7 @@ else
   gg.setValues(s90)
   gg.clearResults()
  end
- if id2[1] and gun == "27" then
+ if id2[1] and gun == "m1887" then
  gg.getListItems(m18)
   m18[1].flags = gg.TYPE_DWORD
   m18[1].value = id2[1]
@@ -1596,7 +1608,7 @@ else
   gg.setValues(m18)
   gg.clearResults()
  end
- if id2[1] and gun == "28" then
+ if id2[1] and gun == "mp7" then
   gg.getListItems(mp7)
   mp7[1].flags = gg.TYPE_DWORD
   mp7[1].value = id2[1]
@@ -1604,7 +1616,7 @@ else
   gg.setValues(mp7)
   gg.clearResults()
  end
- if id2[1] and gun == "29" then
+ if id2[1] and gun == "frag" then
  gg.getListItems(frag)
   frag[1].flags = gg.TYPE_DWORD
   frag[1].value = id2[1]
@@ -1612,7 +1624,7 @@ else
   gg.setValues(frag)
   gg.clearResults()
  end
- if id2[1] and gun == "30" then
+ if id2[1] and gun == "flash" then
   gg.getListItems(flash)
   flash[1].flags = gg.TYPE_DWORD
   flash[1].value = id2[1]
@@ -1620,7 +1632,7 @@ else
   gg.setValues(flash)
   gg.clearResults()
  end
- if id2[1] and gun == "31" then
+ if id2[1] and gun == "smoke" then
   gg.getListItems(smoke)
   smoke[1].flags = gg.TYPE_DWORD
   smoke[1].value = id2[1]
@@ -1628,7 +1640,15 @@ else
   gg.setValues(smoke)
   gg.clearResults()
  end
- if id2[1] and gun == "999" then
+ if id2[1] and gun == "ksg" then
+	gg.getListItems(ksg)
+	ksg[1].flags = gg.TYPE_DWORD
+	ksg[1].value = id2[1]
+	gg.toast("Skin Set!")
+	gg.setValues(ksg)
+	gg.clearResults()
+   end
+ if id2[1] and gun == "scarh" then
   gg.getListItems(scarh)
   scarh[1].flags = gg.TYPE_DWORD
   scarh[1].value = id2[1]
@@ -4164,6 +4184,7 @@ function PassS1()
 		 "Vivid Magenta🟠",--9521
 		 "Vivid Green🟠",--9522
 		 "Gold Inlay🟠",--9573
+		 "Kyanite",
          "🔙"
        }, nil, (os["date"]([[Select Default knife skin:
 	   🟠 = Tier 7]])))
@@ -4240,7 +4261,12 @@ function PassS1()
 		   gg.toast("Your current Knife skin is: Default->Gold Inlay")
 		   gg.setValues(skin) gg.clearResults()
          end
-         if DefaultChange[15] == true then
+		 if DefaultChange[15] == true then
+			gg.getListItems(skin) skin[1].flags = gg.TYPE_DWORD skin[1].value = "9700"
+			gg.toast("Your current Knife skin is: Default->Kyanite")
+			gg.setValues(skin) gg.clearResults()
+		  end
+         if DefaultChange[16] == true then
            Knife()
          end
        end
@@ -4265,6 +4291,7 @@ function PassS1()
 		 "Sweet Tooth🟠",
 		 "Verglas🟠",
 		 "Gas Attack🟠",--9520
+		 "Sanguine",
          "🔙"
        }, nil, (os["date"]([[Select Karambit:
 	   🔴 = Tier 6
@@ -4351,7 +4378,12 @@ function PassS1()
 		   gg.toast("Your current Knife skin is: Karambit->Gas Attack")
 		   gg.setValues(skin) gg.clearResults()
          end
-         if KarambitChange[17] == true then
+		 if KarambitChange[17] == true then
+			gg.getListItems(skin) skin[1].flags = gg.TYPE_DWORD skin[1].value = "9701"
+			gg.toast("Your current Knife skin is: Karambit->Sanguine")
+			gg.setValues(skin) gg.clearResults()
+		  end
+         if KarambitChange[18] == true then
            Knife()
          end
        end
@@ -4612,7 +4644,7 @@ function PassS1()
 
  function AxeChanger()
    AxeChange = gg["multiChoice"]({
-		 "Tactical Axe (No Skin)🔴",
+		 "Default🔴",
 		 "Hot Rod🟠",
 		 "Continuum🟠",
 		 "Mix🟠",
@@ -4621,6 +4653,7 @@ function PassS1()
 		 "Olive🟠",
 		 "Surfdog🟠",
 		 "Acid Rain🟠",
+		 "Sanguinarius🟠",
          "🔙"
        }, nil, (os["date"]([[Select Tactical Axe:
 	   🔴 = Tier 6 
@@ -4674,8 +4707,12 @@ function PassS1()
 		   gg.toast("Your current Knife skin is: Tactical Axe->Acid Rain")
 		   gg.setValues(skin) gg.clearResults()
 		 end
-   
-         if AxeChange[10] == true then
+		 if AxeChange[10] == true then
+			gg.getListItems(skin) skin[1].flags = gg.TYPE_DWORD skin[1].value = "9725"
+			gg.toast("Your current Knife skin is: Tactical Axe->Sanguinarius")
+			gg.setValues(skin) gg.clearResults()
+		  end
+         if AxeChange[11] == true then
            Knife()
          end
        end
@@ -4685,7 +4722,7 @@ function PassS1()
 
  function TactoolChanger()
   TactoolChange = gg["multiChoice"]({
-		 "Tactool (No Skin)🔴",
+		 "Default🔴",
 		 "Catacomb🟠",
 		 "Grandeur🟠",
 		 "Scythe🟠",
@@ -4696,6 +4733,7 @@ function PassS1()
 		 "Pestilence🟠",
 		 "Conjuctivitis🟠",
 		 "Sciuridae Saboteur🟠",--9544
+		 "Vibroslice🟠",
          "🔙"
        }, nil, (os["date"]([[Select Tactool:
 	   🔴 = Tier 6 
@@ -4705,7 +4743,7 @@ function PassS1()
        else
          if TactoolChange[1] == true then
 		   gg.getListItems(skin) skin[1].flags = gg.TYPE_DWORD skin[1].value = "731"
-		   gg.toast("Your current Knife skin is: Tactool-normal")
+		   gg.toast("Your current Knife skin is: Tactool-Normal")
 		   gg.setValues(skin) gg.clearResults()
          end     
 		 if TactoolChange[2] == true then
@@ -4763,7 +4801,13 @@ function PassS1()
 			gg.setValues(skin) gg.clearResults()
 			gg.toast("Your current Knife skin is: Tactool->Sciuridae Saboteur")
 			end
-         if TactoolChange[12] == true then
+			if TactoolChange[12] == true then
+				gg.getResults(25)
+				gg.getListItems(skin) skin[1].flags = gg.TYPE_DWORD skin[1].value = "9727"
+				gg.setValues(skin) gg.clearResults()
+				gg.toast("Your current Knife skin is: Tactool->Vibrosclice")
+				end
+         if TactoolChange[13] == true then
            Knife()
          end
        end
@@ -4873,6 +4917,7 @@ function PassS1()
 		 "Vinny's Customs",--9483
 		 "Brass Predator",--9484
 		 "Lionfish",--9562
+		 "Grand Master",
          "🔙"
        }, nil, (os["date"]([[Select Skin:]])))
        if ScarHTier5Change == nil then
@@ -4898,6 +4943,11 @@ function PassS1()
 		   gg.setValues(scarh) gg.clearResults()
          end   
 		 if ScarHTier5Change[5] == true then
+			gg.getListItems(scarh) scarh[1].flags = gg.TYPE_DWORD scarh[1].value = "9661"
+			gg.toast("Your current Scar-H skin is: Grand Master")
+			gg.setValues(scarh) gg.clearResults()
+		  end   
+		 if ScarHTier5Change[6] == true then
             ScarHChanger()
          end
        end
@@ -4925,6 +4975,7 @@ function PassS1()
 	 function ScarHTier4Changer()
 		ScarHTier4Change = gg["multiChoice"]({
 			   "Jammer",--9551
+			   "Soul Eater",
 			   "🔙"
 			 }, nil, (os["date"]([[Select Skin:]])))
 			 if ScarHTier4Change == nil then
@@ -4934,8 +4985,12 @@ function PassS1()
 				 gg.toast("Your current Scar-H skin is: Jammer")
 				 gg.setValues(scarh) gg.clearResults()
 			   end     
-			   
 			   if ScarHTier4Change[2] == true then
+				gg.getListItems(scarh) scarh[1].flags = gg.TYPE_DWORD scarh[1].value = "9709"
+				gg.toast("Your current Scar-H skin is: Soul Eater")
+				gg.setValues(scarh) gg.clearResults()
+			  end    
+			   if ScarHTier4Change[3] == true then
 				  ScarHChanger()
 			   end
 			 end
@@ -4973,6 +5028,9 @@ function PassS1()
 		 "Ruin",
 		 "Arch Rival",
 		 "Season 7",
+		 "Skadi",
+		 "Prominence",
+		 "See You Later Alligator",
          "🔙"
        }, nil, (os["date"]([[Select Skin:]])))
        if FragTier5Change == nil then
@@ -4997,8 +5055,22 @@ function PassS1()
 		   gg.toast("Your current Frag Grenade skin is: Season 7")
 		   gg.setValues(frag) gg.clearResults()
          end  
-		 
 		 if FragTier5Change[5] == true then
+			gg.getListItems(frag) frag[1].flags = gg.TYPE_DWORD frag[1].value = "9676"
+			gg.toast("Your current Frag Grenade skin is: Skadi")
+			gg.setValues(frag) gg.clearResults()
+		  end  
+		  if FragTier5Change[6] == true then
+			gg.getListItems(frag) frag[1].flags = gg.TYPE_DWORD frag[1].value = "9678"
+			gg.toast("Your current Frag Grenade skin is: Prominence")
+			gg.setValues(frag) gg.clearResults()
+		  end  
+		  if FragTier5Change[7] == true then
+			gg.getListItems(frag) frag[1].flags = gg.TYPE_DWORD frag[1].value = "9679"
+			gg.toast("Your current Frag Grenade skin is: See You Later Alligator")
+			gg.setValues(frag) gg.clearResults()
+		  end  
+		 if FragTier5Change[8] == true then
            FragChanger()
          end
        end
@@ -5011,6 +5083,9 @@ function PassS1()
 		 "RIP", --8998
 		 "Solid Eternal", --9488
 		 "Hot Eternal", --9487
+		 "Ninja",
+		 "Launcher",
+		 "OutStrip",
          "🔙"
        }, nil, (os["date"]([[Select Skin:]])))
        if FragTier4Change == nil then
@@ -5036,6 +5111,21 @@ function PassS1()
 		   gg.setValues(frag) gg.clearResults()
          end  
 		 if FragTier4Change[5] == true then
+			gg.getListItems(frag) frag[1].flags = gg.TYPE_DWORD frag[1].value = "9487"
+			gg.toast("Your current Frag Grenade skin is: Ninja")
+			gg.setValues(frag) gg.clearResults()
+		  end  
+		  if FragTier4Change[6] == true then
+			gg.getListItems(frag) frag[1].flags = gg.TYPE_DWORD frag[1].value = "9677"
+			gg.toast("Your current Frag Grenade skin is: Launcher")
+			gg.setValues(frag) gg.clearResults()
+		  end  
+		  if FragTier4Change[7] == true then
+			gg.getListItems(frag) frag[1].flags = gg.TYPE_DWORD frag[1].value = "9680"
+			gg.toast("Your current Frag Grenade skin is: Outstrip")
+			gg.setValues(frag) gg.clearResults()
+		  end  
+		 if FragTier4Change[8] == true then
            FragChanger()
          end
        end
@@ -5054,6 +5144,8 @@ function PassS1()
 			   "Gravity", --9437
 			   "Stinkeroid", --9548
 			   "Scrap Panda", --9556
+			   "Sneaks Up",
+			   "Zap Frag",
 			   "🔙"
 			 }, nil, (os["date"]([[Select Skin:]])))
 			 if FragTier3Change == nil then
@@ -5113,7 +5205,17 @@ function PassS1()
 				gg.toast("Your current Frag Grenade skin is: Scrap Panda")
 				gg.setValues(frag) gg.clearResults()
 			  end  
-			   if FragTier3Change[12] == true then
+			  if FragTier3Change[12] == true then
+				gg.getListItems(frag) frag[1].flags = gg.TYPE_DWORD frag[1].value = "9681"
+				gg.toast("Your current Frag Grenade skin is: Sneaks Up")
+				gg.setValues(frag) gg.clearResults()
+			  end  
+			  if FragTier3Change[13] == true then
+				gg.getListItems(frag) frag[1].flags = gg.TYPE_DWORD frag[1].value = "9731"
+				gg.toast("Your current Frag Grenade skin is: Zap Frag")
+				gg.setValues(frag) gg.clearResults()
+			  end  
+			   if FragTier3Change[14] == true then
 				 FragChanger()
 			   end
 			 end
@@ -5149,6 +5251,9 @@ function PassS1()
   FlashTier5Change = gg["multiChoice"]({
 		 "New Year",
 		 "Brass Patina",
+		 "Skadi",
+		 "Prominence",
+		 "See You Later Alligator",
          "🔙"
        }, nil, (os["date"]([[Select Skin:]])))
        if FlashTier5Change == nil then
@@ -5164,6 +5269,21 @@ function PassS1()
 		   gg.setValues(flash) gg.clearResults()
          end  
 		 if FlashTier5Change[3] == true then
+			gg.getListItems(flash) flash[1].flags = gg.TYPE_DWORD flash[1].value = "9684"
+			gg.toast("Your current Flash Grenade skin is: Skadi")
+			gg.setValues(flash) gg.clearResults()
+		  end 
+		  if FlashTier5Change[4] == true then
+			gg.getListItems(flash) flash[1].flags = gg.TYPE_DWORD flash[1].value = "9686"
+			gg.toast("Your current Flash Grenade skin is: Prominence")
+			gg.setValues(flash) gg.clearResults()
+		  end 
+		  if FlashTier5Change[5] == true then
+			gg.getListItems(flash) flash[1].flags = gg.TYPE_DWORD flash[1].value = "9687"
+			gg.toast("Your current Flash Grenade skin is: See You Later Alligator")
+			gg.setValues(flash) gg.clearResults()
+		  end 
+		 if FlashTier5Change[6] == true then
            FlashChanger()
          end
        end
@@ -5175,6 +5295,9 @@ function PassS1()
 		 "RIP", --9000
 		 "Hot Eternal", --9489
 		 "Solid Eternal", --9490
+		 "Ninja",
+		 "Launcher",
+		 "Outstrip",
          "🔙"
        }, nil, (os["date"]([[Select Skin:]])))
        if FlashTier4Change == nil then
@@ -5193,8 +5316,23 @@ function PassS1()
 		   gg.getListItems(flash) flash[1].flags = gg.TYPE_DWORD flash[1].value = "9490"
 		   gg.toast("Your current Flash Grenade skin is: Solid Eternal")
 		   gg.setValues(flash) gg.clearResults()
-         end   
+         end  
 		 if FlashTier4Change[4] == true then
+			gg.getListItems(flash) flash[1].flags = gg.TYPE_DWORD flash[1].value = "9683"
+			gg.toast("Your current Flash Grenade skin is: Ninja")
+			gg.setValues(flash) gg.clearResults()
+		  end  
+		  if FlashTier4Change[5] == true then
+			gg.getListItems(flash) flash[1].flags = gg.TYPE_DWORD flash[1].value = "9685"
+			gg.toast("Your current Flash Grenade skin is: Launcher")
+			gg.setValues(flash) gg.clearResults()
+		  end  
+		  if FlashTier4Change[6] == true then
+			gg.getListItems(flash) flash[1].flags = gg.TYPE_DWORD flash[1].value = "9688"
+			gg.toast("Your current Flash Grenade skin is: Outstrip")
+			gg.setValues(flash) gg.clearResults()
+		  end   
+		 if FlashTier4Change[7] == true then
            FlashChanger()
          end
        end
@@ -5213,6 +5351,8 @@ function PassS1()
 			   "System", --9173
 			   "Snow Rush", --9389
 			   "Gravity", --9437
+			   "Sneaks Up",
+			   "Hal",
 			   "🔙"
 			 }, nil, (os["date"]([[Select Skin:]])))
 			 if FlashTier3Change == nil then
@@ -5272,7 +5412,17 @@ function PassS1()
 				gg.toast("Your current Flash Grenade skin is: Gravity")
 				gg.setValues(flash) gg.clearResults()
 			  end   
-			   if FlashTier3Change[12] == true then
+			  if FlashTier3Change[12] == true then
+				gg.getListItems(flash) flash[1].flags = gg.TYPE_DWORD flash[1].value = "9689"
+				gg.toast("Your current Flash Grenade skin is: Sneaks Up")
+				gg.setValues(flash) gg.clearResults()
+			  end  
+			  if FlashTier3Change[13] == true then
+				gg.getListItems(flash) flash[1].flags = gg.TYPE_DWORD flash[1].value = "9732"
+				gg.toast("Your current Flash Grenade skin is: Hal")
+				gg.setValues(flash) gg.clearResults()
+			  end 
+			   if FlashTier3Change[14] == true then
 				 FlashChanger()
 			   end
 			 end
@@ -5307,6 +5457,9 @@ function PassS1()
 	 function SmokeTier5Changer()
   SmokeTier5Change = gg["multiChoice"]({
 		 "Security",
+		 "Skadi",
+		 "Prominence",
+		 "See You Later Alligator"
          "🔙"
        }, nil, (os["date"]([[Select Skin:]])))
        if SmokeTier5Change == nil then
@@ -5317,6 +5470,21 @@ function PassS1()
 		   gg.setValues(smoke) gg.clearResults()
          end     
 		 if SmokeTier5Change[2] == true then
+			gg.getListItems(smoke) smoke[1].flags = gg.TYPE_DWORD smoke[1].value = "9691"
+			gg.toast("Your current Smoke Grenade skin is: Skadi")
+			gg.setValues(smoke) gg.clearResults()
+		  end    
+		  if SmokeTier5Change[3] == true then
+			gg.getListItems(smoke) smoke[1].flags = gg.TYPE_DWORD smoke[1].value = "9694"
+			gg.toast("Your current Smoke Grenade skin is: Prominence")
+			gg.setValues(smoke) gg.clearResults()
+		  end    
+		  if SmokeTier5Change[4] == true then
+			gg.getListItems(smoke) smoke[1].flags = gg.TYPE_DWORD smoke[1].value = "9695"
+			gg.toast("Your current Smoke Grenade skin is: See You Later Alligator")
+			gg.setValues(smoke) gg.clearResults()
+		  end    
+		 if SmokeTier5Change[5] == true then
            SmokeChanger()
          end
        end
@@ -5330,6 +5498,9 @@ function PassS1()
 		 "RIP", --8999
 		 "Solid Eternal", --9486
 		 "Hot Eternal", --9485
+		 "Ninja",
+		 "Launcher",
+		 "Outstrip",
          "🔙"
        }, nil, (os["date"]([[Select Skin:]])))
        if SmokeTier4Change == nil then
@@ -5358,8 +5529,23 @@ function PassS1()
 		   gg.getListItems(smoke) smoke[1].flags = gg.TYPE_DWORD smoke[1].value = "9485"
 		   gg.toast("Your current Smoke Grenade skin is: Hot Eternal")
 		   gg.setValues(smoke) gg.clearResults()
-         end   			 
+         end   		
 		 if SmokeTier4Change[6] == true then
+			gg.getListItems(smoke) smoke[1].flags = gg.TYPE_DWORD smoke[1].value = "9690"
+			gg.toast("Your current Smoke Grenade skin is: Ninja")
+			gg.setValues(smoke) gg.clearResults()
+		  end   	
+		  if SmokeTier4Change[7] == true then
+			gg.getListItems(smoke) smoke[1].flags = gg.TYPE_DWORD smoke[1].value = "9692"
+			gg.toast("Your current Smoke Grenade skin is: Launcher")
+			gg.setValues(smoke) gg.clearResults()
+		  end   	
+		  if SmokeTier4Change[8] == true then
+			gg.getListItems(smoke) smoke[1].flags = gg.TYPE_DWORD smoke[1].value = "9696"
+			gg.toast("Your current Smoke Grenade skin is: Outstrip")
+			gg.setValues(smoke) gg.clearResults()
+		  end   		 
+		 if SmokeTier4Change[9] == true then
            SmokeChanger()
          end
        end
@@ -5378,6 +5564,8 @@ function PassS1()
 			   "Synth Wave",--8966
 			   "Neo Dream",--8978
 			   "Dissolve",--9015
+			   "Sneaks Up",
+			   "Plasma Vent",
 			   "🔙"
 			 }, nil, (os["date"]([[Select Skin:]])))
 			 if SmokeTier3Change == nil then
@@ -5437,7 +5625,17 @@ function PassS1()
 				gg.toast("Your current Smoke Grenade skin is: Dissolve")
 				gg.setValues(smoke) gg.clearResults()
 			  end  
-			   if SmokeTier3Change[12] == true then
+			  if SmokeTier3Change[12] == true then
+				gg.getListItems(smoke) smoke[1].flags = gg.TYPE_DWORD smoke[1].value = "9697"
+				gg.toast("Your current Smoke Grenade skin is: Sneaks Up")
+				gg.setValues(smoke) gg.clearResults()
+			  end  
+			  if SmokeTier3Change[13] == true then
+				gg.getListItems(smoke) smoke[1].flags = gg.TYPE_DWORD smoke[1].value = "9733"
+				gg.toast("Your current Smoke Grenade skin is: Plasma Vent")
+				gg.setValues(smoke) gg.clearResults()
+			  end  
+			   if SmokeTier3Change[14] == true then
 				SmokeChanger()
 			   end
 			 end
@@ -6793,6 +6991,7 @@ function PassS1()
 		 "Equine", --9309
 		 "Tears Of Joy", --9428
 		 "Hyper Dash", --9474
+		 "Marching Dead",
          "🔙"
        }, nil, (os["date"]([[Select GSR 1911 skin:]])))
        if gsrtierchange3 == nil then
@@ -6923,7 +7122,13 @@ function PassS1()
 		   gg.setValues(gsr)
 		   gg.clearResults()
 		 end
-         if gsrtierchange3[22] == true then
+		 if gsrtierchange3[22] == true then
+			gg.getListItems(gsr) gsr[1].flags = gg.TYPE_DWORD  gsr[1].value = "9710"
+			gg.toast("Your current GSR 1911 skin is: Marching Dead")
+			gg.setValues(gsr)
+			gg.clearResults()
+		  end
+         if gsrtierchange3[23] == true then
            GSRChanger()
          end
        end
@@ -6984,6 +7189,7 @@ function PassS1()
 		 "Under The Sea", --4640
 		 "Proto", --8608
 		 "Lupine", --4628
+		 "Retaliation",
          "🔙"
        }, nil, (os["date"]([[Select MP7 Skin:]])))
        if MP7tier55 == nil then
@@ -7024,7 +7230,13 @@ function PassS1()
 		   gg.setValues(mp7)
 		   gg.clearResults()
 		 end
-         if MP7tier55[7] == true then
+		 if MP7tier55[7] == true then
+			gg.getListItems(mp7) mp7[1].flags = gg.TYPE_DWORD  mp7[1].value = "9654"
+			gg.toast("Your current MP7 skin is: Retaliation")
+			gg.setValues(mp7)
+			gg.clearResults()
+		  end
+         if MP7tier55[8] == true then
            Selector()
          end
        end
@@ -7044,6 +7256,7 @@ function PassS1()
 		 "Energy", --8349
 		 "Citrus Soda", --8637
 		 "Spacetime", --9439
+		 "Luna",
          "🔙"
        }, nil, (os["date"]([[Select MP7 Skin:]])))
        if MP7tier44 == nil then
@@ -7114,7 +7327,13 @@ function PassS1()
 		   gg.setValues(mp7)
 		   gg.clearResults()
 		 end
-         if MP7tier44[12] == true then
+		 if MP7tier44[12] == true then
+			gg.getListItems(mp7) mp7[1].flags = gg.TYPE_DWORD  mp7[1].value = "9719"
+			gg.toast("Your current MP7 skin is: Luna")
+			gg.setValues(mp7)
+			gg.clearResults()
+		  end
+         if MP7tier44[13] == true then
            Selector()
          end
        end
@@ -7153,8 +7372,75 @@ function PassS1()
        end
        MAINLUA = -1
      end
-	
-	
+	 function KSGChanger()
+		KSGChange = gg["multiChoice"]({
+			  "Tier 6",
+			  "Tier 5",
+			  "🔙"
+			}, nil, (os["date"]([[Select KSG Skin Tier:]])))
+			if KSGChange == nil then
+			else
+				if KSGChange[1] == true then
+					ksgtier6()
+				  end
+			  if KSGChange[2] == true then
+				ksgtier5()
+			  end
+			  if KSGChange[3] == true then
+				Selector()
+			  end
+			end
+			MAINLUA = -1
+		  end
+
+		  function ksgtier6()
+			ksgtier6change = gg["multiChoice"]({
+				  "Zap Blaster",	
+				  "🔙"
+				}, nil, (os["date"]([[Select KSG skin:]])))
+				if ksgtier6change == nil then
+				else
+				  if ksgtier6change[1] == true then
+					gg.getListItems(ksg) ksg[1].flags = gg.TYPE_DWORD ksg[1].value = "9728"
+					gg.toast("Your current KSG skin is: Zap Blaster")
+					gg.setValues(ksg)
+					gg.clearResults()
+				  end	
+					
+				  if ksgtier6change[3] == true then
+					KSGChanger()
+				  end
+				end
+				MAINLUA = -1
+			  end
+
+		  function ksgtier5()
+			ksgtier5change = gg["multiChoice"]({
+				  "Trigger",	
+				  "Vanguard",
+				  "🔙"
+				}, nil, (os["date"]([[Select KSG skin:]])))
+				if ksgtier5change == nil then
+				else
+				  if ksgtier5change[1] == true then
+					gg.getListItems(ksg) ksg[1].flags = gg.TYPE_DWORD ksg[1].value = "9674"
+					gg.toast("Your current KSG skin is: Trigger")
+					gg.setValues(ksg)
+					gg.clearResults()
+				  end	
+				  if ksgtier5change[2] == true then
+					gg.getListItems(ksg) ksg[1].flags = gg.TYPE_DWORD ksg[1].value = "9705"
+					gg.toast("Your current KSG skin is: Vanguard")
+					gg.setValues(ksg)
+					gg.clearResults()
+				  end			
+				  if ksgtier5change[3] == true then
+					KSGChanger()
+				  end
+				end
+				MAINLUA = -1
+			  end
+
 	 function p250tier5()
    p250tierchange5 = gg["multiChoice"]({
 		 "Phoenix",	
@@ -7572,6 +7858,8 @@ function PassS1()
 		 "Super Hexagon",
 		 "Will Of Brass",--9513
 		 "Joker Anarchy",
+		 "Racer",
+		 "Circuit S5 Champion",
          "🔙"
        }, nil, (os["date"]([[Select M4 skin:]])))
        if M4tierchange5 == nil then
@@ -7744,7 +8032,19 @@ function PassS1()
 		   gg.setValues(m4)
 		   gg.clearResults()
 		 end	
-         if M4tierchange5[29] == true then
+		 if M4tierchange5[29] == true then
+			gg.getListItems(m4) m4[1].flags = gg.TYPE_DWORD m4[1].value = "9659"
+			gg.toast("Your current M4 skin is: Racer")
+			gg.setValues(m4)
+			gg.clearResults()
+		  end	
+		  if M4tierchange5[30] == true then
+			gg.getListItems(m4) m4[1].flags = gg.TYPE_DWORD m4[1].value = "9738"
+			gg.toast("Your current M4 skin is: Circuit S5 Champion")
+			gg.setValues(m4)
+			gg.clearResults()
+		  end	
+         if M4tierchange5[31] == true then
            M4Changer()
          end
        end
@@ -7905,6 +8205,8 @@ function M4tier3()
 		 "Valkyrie", --9375
 		 "Sun Scald", --9403	 
 		 "Hyper Dash", --9476
+		 "Locked On Target",
+		 "Spicula",
          "🔙"
        }, nil, (os["date"]([[Select M4 skin:]])))
        if M4tierchange3 == nil then
@@ -8029,7 +8331,19 @@ function M4tier3()
 		   gg.setValues(m4)
 		   gg.clearResults()
 		 end		 
-         if M4tierchange3[21] == true then
+		 if M4tierchange3[21] == true then
+			gg.getListItems(m4) m4[1].flags = gg.TYPE_DWORD m4[1].value = "9682"
+			gg.toast("Your current M4 skin is: Locked On Target")
+			gg.setValues(m4)
+			gg.clearResults()
+		  end	
+		  if M4tierchange3[22] == true then
+			gg.getListItems(m4) m4[1].flags = gg.TYPE_DWORD m4[1].value = "9718"
+			gg.toast("Your current M4 skin is: Spicula")
+			gg.setValues(m4)
+			gg.clearResults()
+		  end		 
+         if M4tierchange3[23] == true then
            M4Changer()
          end
        end
@@ -8040,6 +8354,7 @@ function M4tier3()
    AugChange = gg["multiChoice"]({
 		 "Tier 7",
 		 "Tier 5",
+		 "Tier 4",
          "🔙"
        }, nil, (os["date"]([[Select Aug Skin Tier:]])))
        if AugChange == nil then
@@ -8050,7 +8365,10 @@ function M4tier3()
 		 if AugChange[2] == true then
            Augtier5()
 		 end
-         if AugChange[3] == true then
+		 if AugChange[3] == true then
+			Augtier4()
+		  end
+         if AugChange[4] == true then
            Selector()
          end
        end
@@ -8073,6 +8391,7 @@ function M4tier3()
 		 "Season 7 Spec Ops", 
 		 "Kintsugi",--9564
 		 "Bionic Bear",--9553
+		 "Tao",
          "🔙"
        }, nil, (os["date"]([[Select Aug skin:]])))
        if Augtierchange5 == nil then
@@ -8167,12 +8486,143 @@ function M4tier3()
 			gg.setValues(aug)
 			gg.clearResults()
 		  end    
-         if Augtierchange5[16] == true then
+		  if Augtierchange5[16] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "9671"
+			gg.toast("Your current Aug skin is: Tao")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end   
+         if Augtierchange5[17] == true then
            AugChanger()
          end
        end
        MAINLUA = -1
  end
+
+ function Augtier4()
+	Augtierchange4 = gg["multiChoice"]({
+		  "Nine Lives",    
+		  "Comic",    
+		  "Butterfly",    
+		  "Safari",    
+		  "Vascular",    
+		  "Mandala",    
+		  "Astral",    
+		  "Sweet Tooth",    
+		  "Cerberus",    
+		  "Circuit 3 Champion",    
+		  "Spook House",    
+		  "Shred", 
+		  "Season 7 Spec Ops", 
+		  "Kintsugi",--9564
+		  "Bionic Bear",--9553
+		  "Tao",
+		  "🔙"
+		}, nil, (os["date"]([[Select Aug skin:]])))
+		if Augtierchange4 == nil then
+		else
+		  if Augtierchange4[1] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "410"
+			gg.toast("Your current Aug skin is: Nine Lives")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[2] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "443"
+			gg.toast("Your current Aug skin is: Comic")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[3] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "444"
+			gg.toast("Your current Aug skin is: Butterfly")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[4] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "910"
+			gg.toast("Your current Aug skin is: Safari")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[5] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "7509"
+			gg.toast("Your current Aug skin is: Vascular")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end
+		  if Augtierchange4[6] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "8336"
+			gg.toast("Your current Aug skin is: Mandala")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[7] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "8619"
+			gg.toast("Your current Aug skin is: Astral")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[8] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "8694"
+			gg.toast("Your current Aug skin is: Sweet Tooth")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[9] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "8927"
+			gg.toast("Your current Aug skin is: Cerberus")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[10] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "8988"
+			gg.toast("Your current Aug skin is: Circuit 3 Champion")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[11] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "9001"
+			gg.toast("Your current Aug skin is: Spook House")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end        
+		  if Augtierchange4[12] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "9381"
+			gg.toast("Your current Aug skin is: Shred")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end       
+		  if Augtierchange4[13] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "9451"
+			gg.toast("Your current Aug skin is: Season 7 Spec Ops")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end      
+		  if Augtierchange4[14] == true then
+			gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "9564"
+			gg.toast("Your current Aug skin is: Kintsugi")
+			gg.setValues(aug)
+			gg.clearResults()
+		  end      
+		  if Augtierchange4[15] == true then
+			 gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "9553"
+			 gg.toast("Your current Aug skin is: Bionic Bear")
+			 gg.setValues(aug)
+			 gg.clearResults()
+		   end    
+		   if Augtierchange4[16] == true then
+			 gg.getListItems(aug) aug[1].flags = gg.TYPE_DWORD aug[1].value = "9671"
+			 gg.toast("Your current Aug skin is: Tao")
+			 gg.setValues(aug)
+			 gg.clearResults()
+		   end   
+		  if Augtierchange4[17] == true then
+			AugChanger()
+		  end
+		end
+		MAINLUA = -1
+  end
 
 	 function Augtier7()
    Augtierchange7 = gg["multiChoice"]({
@@ -8250,6 +8700,7 @@ function M4tier3()
 		 "Oiseau",
 		 "Bismuth",
 		 "Rattlesnake",
+		 "Draconic",
          "🔙"
        }, nil, (os["date"]([[Select Mr96 skin:]])))
        if mr96t5change == nil then
@@ -8302,9 +8753,14 @@ function M4tier3()
 		   gg.setValues(mr96)
 		   gg.clearResults()
 		 end		
+		 if mr96t5change[9] == true then
+			gg.getListItems(mr96) mr96[1].flags = gg.TYPE_DWORD  mr96[1].value = "9663"
+			gg.toast("Your current Mr96 skin is: Draconic")
+			gg.setValues(mr96)
+			gg.clearResults()
+		  end
 		
-		
-         if mr96t5change[9] == true then
+         if mr96t5change[10] == true then
            Mr96Changer()
          end
        end
@@ -8579,6 +9035,8 @@ function M4tier3()
 		 "Season 6 Diamond",
 		 "Struggle Through Dark",--9505
 		 "Struggle Through Light",--9506
+		 "Owler",
+		 "Golem's Bane",
          "🔙"
        }, nil, (os["date"]([[Select HK417 skin:]])))
        if Hk417t5change == nil then
@@ -8679,7 +9137,19 @@ function M4tier3()
 		   gg.setValues(hk)
 		   gg.clearResults()
 		 end
-         if Hk417t5change[17] == true then
+		 if Hk417t5change[17] == true then
+			gg.getListItems(hk) hk[1].flags = gg.TYPE_DWORD  hk[1].value = "9670"
+			gg.toast("Your current HK417 skin is: Owler")
+			gg.setValues(hk)
+			gg.clearResults()
+		  end
+		  if Hk417t5change[18] == true then
+			gg.getListItems(hk) hk[1].flags = gg.TYPE_DWORD  hk[1].value = "9734"
+			gg.toast("Your current HK417 skin is: Golem's Bane")
+			gg.setValues(hk)
+			gg.clearResults()
+		  end
+         if Hk417t5change[19] == true then
            Hk417Changer()
          end
        end
@@ -8710,19 +9180,23 @@ function M4tier3()
 	
 	 function SGChanger()
   SGChange = gg["multiChoice"]({
+		 "Tier 6",
 		 "Tier 5",
 		 "Tier 4",
          "🔙"
        }, nil, (os["date"]([[Select SG skin Tier:]])))
        if SGChange == nil then
        else
-         if SGChange[1] == true then
+		if SGChange[1] == true then
+			SGtier6Changer()
+		  end
+         if SGChange[2] == true then
            SGtier5Changer()
 		 end
-		 if SGChange[2] == true then
+		 if SGChange[3] == true then
            SGtier4Changer()
 		 end
-         if SGChange[3] == true then
+         if SGChange[4] == true then
            Selector()
          end
        end
@@ -8756,6 +9230,7 @@ function M4tier3()
 		 "Soft Package",
 		 "Vintage",
 		 "Season 6 Silver",	
+		 "Aqua Force",
          "🔙"
        }, nil, (os["date"]([[Select Super 90 skin:]])))
        if S90tier5Change == nil then
@@ -8784,7 +9259,13 @@ function M4tier3()
 		   gg.setValues(s90)
 		   gg.clearResults()
 		 end
-         if S90tier5Change[5] == true then
+		 if S90tier5Change[5] == true then
+			gg.getListItems(s90) s90[1].flags = gg.TYPE_DWORD  s90[1].value = "9668"
+			gg.toast("Your current Super 90 skin is: Aqua Force")
+			gg.setValues(s90)
+			gg.clearResults()
+		  end
+         if S90tier5Change[6] == true then
            S90Changer()
          end
        end
@@ -8925,26 +9406,49 @@ function M4tier3()
 	
 	 function M14Changer()
   M14Change = gg["multiChoice"]({
+		 "Tier 6",
 		 "Tier 5",
 		 "Tier 4",
          "🔙"
        }, nil, (os["date"]([[Select M14 skin Tier:]])))
        if M14Change == nil then
        else
-         if M14Change[1] == true then
+		if M14Change[1] == true then
+			M14tier6Changer()
+		  end
+         if M14Change[2] == true then
            M14tier5Changer()
 		 end
-		if M14Change[2] == true then
+		if M14Change[3] == true then
            M14tier4Changer()
 		 end
-         if M14Change[3] == true then
+         if M14Change[4] == true then
            Selector()
          end
        end
        MAINLUA = -1
      end
 	 
-	
+	 function M14tier6Changer()
+		M14tier6Change = gg["multiChoice"]({
+			  "Rampage",
+			  "🔙"
+			}, nil, (os["date"]([[Select M14 skin:]])))
+			if M14tier6Change == nil then
+			else
+			  if M14tier6Change[1] == true then
+				gg.getListItems(m14) m14[1].flags = gg.TYPE_DWORD  m14[1].value = "9712"
+				gg.toast("Your current M14 skin is: Rampage")
+				gg.setValues(m14)
+				gg.clearResults()
+			  end
+			  if M14tier6Change[7] == true then
+				M14Changer()
+			  end
+			end
+			MAINLUA = -1
+		  end
+
 	 function M14tier5Changer()
    M14tier5Change = gg["multiChoice"]({
 		 "Kraken",
@@ -8952,6 +9456,7 @@ function M4tier3()
 		 "Strength",
 		 "Sensor",
 		 "Zombie Steed",
+		 "Final Notice",
          "🔙"
        }, nil, (os["date"]([[Select M14 skin:]])))
        if M14tier5Change == nil then
@@ -8986,7 +9491,13 @@ function M4tier3()
 		   gg.setValues(m14)
 		   gg.clearResults()
 		 end
-         if M14tier5Change[6] == true then
+		 if M14tier5Change[6] == true then
+			gg.getListItems(m14) m14[1].flags = gg.TYPE_DWORD  m14[1].value = "9658"
+			gg.toast("Your current M14 skin is: Final Notice")
+			gg.setValues(m14)
+			gg.clearResults()
+		  end
+         if M14tier5Change[7] == true then
            M14Changer()
          end
        end
@@ -9150,6 +9661,7 @@ function M4tier3()
 	 function SvdChanger()
   SvdChange = gg["multiChoice"]({
 		 "Tier 5",
+		 "Tier 4",
          "🔙"
        }, nil, (os["date"]([[Select SVD skin Tier:]])))
        if SvdChange == nil then
@@ -9175,6 +9687,7 @@ function M4tier3()
 		 "Fire Cobra",
 		 "Retro Winter",
 		 "Security",
+		 "SK8ER Girl",
          "🔙"
        }, nil, (os["date"]([[Select SVD skin:]])))
        if Svdtier5Change == nil then
@@ -9227,18 +9740,141 @@ function M4tier3()
 		   gg.setValues(svd)
 		   gg.clearResults()
 		 end
-         if Svdtier5Change[9] == true then
+		 if Svdtier5Change[9] == true then
+			gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "9613"
+			gg.toast("Your current SVD skin is: SK8ER Girl")
+			gg.setValues(svd)
+			gg.clearResults()
+		  end
+         if Svdtier5Change[10] == true then
            SvdChanger()
          end
        end
        MAINLUA = -1
      end
-	
+	 function Svdtier4Changer()
+		Svdtier4Chang = gg["multiChoice"]({
+			  "Foamy",
+			  "Tiger Shark",
+			  "Popstar",
+			  "Walker",
+			  "Revolt",
+			  "Gecko",
+			  "Magic Burst",
+			  "Port Royal",
+			  "Sorbet",
+			  "Iridescent",
+			  "Cosmic Glide",
+			  "Biting Skull",
+			  "Gnawing Skull",
+			  "Lethal Stripe",
+			  "Ronin",
+			  "🔙"
+			}, nil, (os["date"]([[Select SVD skin:]])))
+			if Svdtier4Chang == nil then
+			else
+			  if Svdtier4Chang[1] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "7189"
+				gg.toast("Your current SVD skin is: Foamy")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[2] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "7209"
+				gg.toast("Your current SVD skin is: Tiger Shark")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[3] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "7212"
+				gg.toast("Your current SVD skin is: Popstar")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[4] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "7573"
+				gg.toast("Your current SVD skin is: Walker")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[5] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "7846"
+				gg.toast("Your current SVD skin is: Revolt")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[6] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "7995"
+				gg.toast("Your current SVD skin is: Gecko")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[7] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "8244"
+				gg.toast("Your current SVD skin is: Magic Burst")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[8] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "8457"
+				gg.toast("Your current SVD skin is: Port Royal")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[9] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "8798"
+				gg.toast("Your current SVD skin is: Sorbet")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[10] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "8832"
+				gg.toast("Your current SVD skin is: Iridescent")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[11] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "9426"
+				gg.toast("Your current SVD skin is: Cosmic Glide")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[12] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "9528"
+				gg.toast("Your current SVD skin is: Biting Skull")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[13] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "9529"
+				gg.toast("Your current SVD skin is: Gnawing Skull")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[14] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "9582"
+				gg.toast("Your current SVD skin is: Lethal Stripe")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[15] == true then
+				gg.getListItems(svd) svd[1].flags = gg.TYPE_DWORD  svd[1].value = "9672"
+				gg.toast("Your current SVD skin is: Ronin")
+				gg.setValues(svd)
+				gg.clearResults()
+			  end
+			  if Svdtier4Chang[16] == true then
+				SvdChanger()
+			  end
+			end
+			MAINLUA = -1
+		  end
 	
 	
 	 function M18Changer()
   M18Change = gg["multiChoice"]({
 		 "Tier 5",
+		 "Tier 4",
          "🔙"
        }, nil, (os["date"]([[Select M1887 skin Tier:]])))
        if M18Change == nil then
@@ -9246,8 +9882,10 @@ function M4tier3()
          if M18Change[1] == true then
            M18tier5Changer()
 		 end
-		
-         if M18Change[2] == true then
+		 if M18Change[2] == true then
+			M18tier4Changer()
+		  end
+         if M18Change[3] == true then
            Selector()
          end
        end
@@ -9301,6 +9939,95 @@ function M4tier3()
        end
        MAINLUA = -1
      end
+	 function M18tier4Changer()
+		M18tier4Change = gg["multiChoice"]({
+			  "Catacomb",
+			  "FKYA",
+			  "Medic",
+			  "Thermal Paranormal",
+			  "Warhawk",
+			  "Bittersweet",
+			  "Echo",
+			  "Melting Targets",
+			  "Ambush",
+			  "Molecular",
+			  "Phoenix Force",
+			  "🔙"
+			}, nil, (os["date"]([[Select M1887 skin:]])))
+			if M18tier4Change == nil then
+			else
+			  if M18tier4Change[1] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "7114"
+				gg.toast("Your current M1887 skin is: Catacomb")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[2] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "7116"
+				gg.toast("Your current M1887 skin is: FKYA")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[3] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "7121"
+				gg.toast("Your current M1887 skin is: Medic")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[4] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "7569"
+				gg.toast("Your current M1887 skin is: Thermal Paranormal")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[5] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "7839"
+				gg.toast("Your current M1887 skin is: Warhawk")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[6] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "8331"
+				gg.toast("Your current M1887 skin is: Bittersweet")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[7] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "8693"
+				gg.toast("Your current M1887 skin is: Echo")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[8] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "8839"
+				gg.toast("Your current M1887 skin is: Melting Targets")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[9] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "8880"
+				gg.toast("Your current M1887 skin is: Ambush")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[10] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "9304"
+				gg.toast("Your current M1887 skin is: Molecular")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[11] == true then
+				gg.getListItems(m18) m18[1].flags = gg.TYPE_DWORD  m18[1].value = "9667"
+				gg.toast("Your current M1887 skin is: Phoenix Force")
+				gg.setValues(m18)
+				gg.clearResults()
+			  end
+			  if M18tier4Change[12] == true then
+				M18Changer()
+			  end
+			end
+			MAINLUA = -1
+		  end
 	
 	 function VectorChanger()
   VectorGChange = gg["multiChoice"]({
@@ -9411,6 +10138,7 @@ function M4tier3()
 		 "Jorogumo Yokai",--9359	
 		 "Fiery",--9471	
 		 "Weaver",--7949	
+		 "Ground Zero",
          "🔙"
        }, nil, (os["date"]([[Select MP5 skin:]])))
        if Mp5tier4Change == nil then
@@ -9517,8 +10245,14 @@ function M4tier3()
 		   gg.setValues(mp5)
 		   gg.clearResults()
 		 end
-		 
-         if Mp5tier4Change[18] == true then
+		 if Mp5tier4Change[18] == true then
+			gg.getListItems(mp5) mp5[1].flags = gg.TYPE_DWORD  mp5[1].value = "9664"
+			gg.toast("Your current MP5 skin is: Ground Zero")
+			gg.setValues(mp5)
+			gg.clearResults()
+		  end
+
+         if Mp5tier4Change[19] == true then
            MP5Changer()
          end
        end
@@ -9540,6 +10274,7 @@ function M4tier3()
 		 "Chemical Reaction",
 		 "nitro Injector",
 		 "Season 7 Gold",
+		 "Wings Of Glory",
          "🔙"
        }, nil, (os["date"]([[Select Vector skin:]])))
        if Vectortier5Change == nil then
@@ -9622,7 +10357,13 @@ function M4tier3()
 		   gg.setValues(vr)
 		   gg.clearResults()
 		 end
-         if Vectortier5Change[14] == true then
+		 if Vectortier5Change[14] == true then
+			gg.getListItems(vr) vr[1].flags = gg.TYPE_DWORD  vr[1].value = "9655"
+			gg.toast("Your current Vector skin is: Wings Of Glory")
+			gg.setValues(vr)
+			gg.clearResults()
+		  end
+         if Vectortier5Change[15] == true then
            VectorChanger()
          end
        end
@@ -9775,6 +10516,27 @@ function M4tier3()
        MAINLUA = -1
      end
 	
+	 function SGtier6Changer()
+		SGtier6Change = gg["multiChoice"]({
+			  "Cursed King",
+			  "🔙"
+			}, nil, (os["date"]([[Select SG 551 skin:]])))
+			if SGtier6Change == nil then
+			else
+			  
+			  if SGtier6Change[1] == true then
+				gg.getListItems(sg) sg[1].flags = gg.TYPE_DWORD  sg[1].value = "9716"
+				gg.toast("Your current SG 551 skin is: Cursed King")
+				gg.setValues(sg)
+				gg.clearResults()
+			  end	
+			  if SGtier6Change[2] == true then
+				SGChanger()
+			  end
+			end
+			MAINLUA = -1
+		  end
+
 	 function SGtier5Changer()
    SGtier5Change = gg["multiChoice"]({
 		 "Angry Hands",
@@ -9900,6 +10662,7 @@ function M4tier3()
 		 "Peg Leg", --8467
 		 "Serenity", --8621
 		 "Space Gunner",--9546
+		 "Clean Shot",
          "🔙"
        }, nil, (os["date"]([[Select SG 551 skin:]])))
        if SGtier4Change == nil then
@@ -9976,7 +10739,13 @@ function M4tier3()
 			gg.setValues(sg)
 			gg.clearResults()
 		  end
-         if SGtier4Change[13] == true then
+		  if SGtier4Change[13] == true then
+			gg.getListItems(sg) sg[1].flags = gg.TYPE_DWORD  sg[1].value = "9660"
+			gg.toast("Your current SG 551 skin is: Clean Shot")
+			gg.setValues(sg)
+			gg.clearResults()
+		  end
+         if SGtier4Change[14] == true then
            SGChanger()
          end
        end
@@ -10047,6 +10816,8 @@ function M4tier3()
 		 "Macroalgae", --9281
 		 "Tranquil", --9385
 		 "Freakmare", --9414
+		 "Zeta",
+		 "Skull Crusher",
          "🔙"
        }, nil, (os["date"]([[Select Dual MTX skin skin:]])))
        if MTXt4change == nil then
@@ -10135,8 +10906,19 @@ function M4tier3()
 		   gg.setValues(mtx)
 		   gg.clearResults()
 		 end
-		 
-         if MTXt4change[15] == true then
+		 if MTXt4change[15] == true then
+			gg.getListItems(mtx) mtx[1].flags = gg.TYPE_DWORD  mtx[1].value = "9653"
+			gg.toast("Your current Dual MTX skin is: Zeta")
+			gg.setValues(mtx)
+			gg.clearResults()
+		  end
+		  if MTXt4change[16] == true then
+			gg.getListItems(mtx) mtx[1].flags = gg.TYPE_DWORD  mtx[1].value = "9717"
+			gg.toast("Your current Dual MTX skin is: Skull Crusher")
+			gg.setValues(mtx)
+			gg.clearResults()
+		  end
+         if MTXt4change[17] == true then
            MTXChanger()
          end
        end
@@ -10176,7 +10958,10 @@ function M4tier3()
 		 if MPXChange[1] == true then
            MPXtier5Changer()
 		 end
-         if MPXChange[2] == true then
+		 if MPXChange[2] == true then
+			MPXtier4Changer()
+		  end
+         if MPXChange[3] == true then
            Selector()
          end
        end
@@ -10336,7 +11121,7 @@ function M4tier3()
 				gg.clearResults()
 			  end
 			  
-			  if MPXtier4Change[25] == true then
+			  if MPXtier4Change[14] == true then
 				MPXChanger()
 			  end
 			end
@@ -10425,6 +11210,7 @@ function M4tier3()
 		 "Yggdrasil", --9387
 		 "Fractured", --9401
 		 "Ophelia",--9575
+		 "Immortal",
          "🔙"
        }, nil, (os["date"]([[Select Deagle skin:]])))
        if Deagletier4Change == nil then
@@ -10525,7 +11311,13 @@ function M4tier3()
 		   gg.setValues(de)
 		   gg.clearResults()
 		 end
-         if Deagletier4Change[17] == true then
+		 if Deagletier4Change[17] == true then
+			gg.getListItems(de) de[1].flags = gg.TYPE_DWORD de[1].value = "9711"
+			gg.toast("Your current Deagle skin is: Immortal")
+			gg.setValues(de)
+			gg.clearResults()
+		  end
+         if Deagletier4Change[18] == true then
            DeagleChanger()
          end
        end
@@ -10689,6 +11481,7 @@ function M4tier3()
 		 "Melt",
 		 "Mechanisms",
 		 "Pristine",--9465
+		 "Kitsune Code",
          "🔙"
        }, nil, (os["date"]([[Select XD45 skin:]])))
        if XD45tier4Change == nil then
@@ -10794,8 +11587,14 @@ function M4tier3()
 		   gg.toast("Your current XD45 skin is: Pristine")
 		   gg.setValues(xd)
 		   gg.clearResults()
-		 end		 
-         if XD45tier4Change[18] == true then
+		 end	
+		 if XD45tier4Change[18] == true then
+			gg.getListItems(xd) xd[1].flags = gg.TYPE_DWORD xd[1].value = "9662"
+			gg.toast("Your current XD45 skin is: Kitsune Code")
+			gg.setValues(xd)
+			gg.clearResults()
+		  end	 
+         if XD45tier4Change[19] == true then
            XD45Changer()
          end
        end
@@ -10876,6 +11675,7 @@ function M4tier3()
 		 "Mutineer",
 		 "Central Processing Unit",
 		 "Quill Machine",--9543
+		 "Enthroned",
          "🔙"
        }, nil, (os["date"]([[Select Fp6 skin:]])))
        if Fp6tier5Change == nil then
@@ -10934,7 +11734,13 @@ function M4tier3()
 			gg.setValues(fp6)
 			gg.clearResults()
 		  end
-         if Fp6tier5Change[10] == true then
+		  if Fp6tier5Change[10] == true then
+			gg.getListItems(fp6) fp6[1].flags = gg.TYPE_DWORD fp6[1].value = "9666"
+			gg.toast("Your current Fp6 skin is: Enthroned")
+			gg.setValues(fp6)
+			gg.clearResults()
+		  end
+         if Fp6tier5Change[11] == true then
            Fp6Changer()
          end
        end
@@ -11187,6 +11993,7 @@ function M4tier3()
 		 "Blueprint",
 		 "Atomic Pile",	
 		 "Eyes Of Brass", --9516
+		 "Star Shot",
          "🔙"
        }, nil, (os["date"]([[Select TRG skin:]])))
        if TRGtier4Change == nil then
@@ -11281,7 +12088,13 @@ function M4tier3()
 		   gg.setValues(trg)
 		   gg.clearResults()
 		 end
-         if TRGtier4Change[16] == true then
+		 if TRGtier4Change[16] == true then
+			gg.getListItems(trg) trg[1].flags = gg.TYPE_DWORD trg[1].value = "9730"
+			gg.toast("Your current TRG skin is: Star Shot")
+			gg.setValues(trg)
+			gg.clearResults()
+		  end
+         if TRGtier4Change[17] == true then
            TRGChanger()
          end
        end
@@ -11373,6 +12186,7 @@ function M4tier3()
 		 "Molecular", --9305
 		 "Hel", --9370
 		 "Freakmare", --9415
+		 "Hazardous Breath",
          "🔙"
        }, nil, (os["date"]([[Select P90 skin:]])))
        if P90tier4Change == nil then
@@ -11497,7 +12311,14 @@ function M4tier3()
 		   gg.setValues(p90)
 		   gg.clearResults()
 		 end
-         if P90tier4Change[21] == true then
+		 if P90tier4Change[21] == true then
+			gg.getListItems(p90) p90[1].flags = gg.TYPE_DWORD p90[1].value = "9415"
+			gg.toast("Your current P90 skin is: Hazardous Breath")
+			gg.setValues(p90)
+			gg.clearResults()
+		  end
+
+         if P90tier4Change[22] == true then
            P90Changer()
          end
        end
@@ -11569,6 +12390,7 @@ function M4tier3()
 		 "Venom Heart Purple",--9511
 		 "Venom Heart Yellow",--9512
 		 "Jammer",--9550
+		 "Agent",
          "🔙"
        }, nil, (os["date"]([[Select AR-15 skin:]])))
        if AR15tier4Change == nil then
@@ -11621,7 +12443,13 @@ function M4tier3()
 			gg.setValues(ar)
 			gg.clearResults()
 		  end
-         if AR15tier4Change[9] == true then
+		  if AR15tier4Change[9] == true then
+			gg.getListItems(ar) ar[1].flags = gg.TYPE_DWORD ar[1].value = "9657"
+			gg.toast("Your current AR-15 skin is: Agent")
+			gg.setValues(ar)
+			gg.clearResults()
+		  end
+         if AR15tier4Change[10] == true then
            AR15Changer()
          end
        end
@@ -11705,6 +12533,7 @@ function M4tier3()
 		 "Petroleum Spirit",
 		 "Selene",--9563
 		 "Bio Torch",--9540
+		 "Rose And Thorns",
          "🔙"
        }, nil, (os["date"]([[Select AK47 skin:]])))
        if aktier5Change == nil then
@@ -11950,7 +12779,13 @@ function M4tier3()
 			gg.setValues(ak)
 			gg.clearResults()
 		  end
-         if aktier5Change[41] == true then
+		  if aktier5Change[41] == true then
+			gg.getListItems(ak) ak[1].flags = gg.TYPE_DWORD ak[1].value = "9713"
+			gg.toast("Your current AK47 skin is: Rose And Thorns")
+			gg.setValues(ak)
+			gg.clearResults()
+		  end
+         if aktier5Change[42] == true then
            AK47Changer()
          end
        end
@@ -11978,6 +12813,7 @@ function M4tier3()
 		 "Doozy",--9523
 		 "Bitting Skull",--9524
 		 "Gnawing Skull",--9525
+		 "Deathmatch",
          "🔙"
        }, nil, (os["date"]([[Select AK47 skin:]])))
        if aktier4Change == nil then
@@ -12096,8 +12932,13 @@ function M4tier3()
 		   gg.setValues(ak)
 		   gg.clearResults()
 		 end
-		
-         if aktier4Change[20] == true then
+		 if aktier4Change[20] == true then
+			gg.getListItems(ak) ak[1].flags = gg.TYPE_DWORD ak[1].value = "9656"
+			gg.toast("Your current AK47 skin is: Deathmatch")
+			gg.setValues(ak)
+			gg.clearResults()
+		  end
+         if aktier4Change[21] == true then
            AK47Changer()
          end
        end
@@ -12555,6 +13396,7 @@ function M4tier3()
 		 "Instrumental",
 		 "Continuum",
 		 "League",
+		 "Atom Smasher",
          "🔙"
        }, nil, (os["date"]([[Select SA58 skin:]])))
        if SA58t5Change == nil then
@@ -12612,8 +13454,14 @@ function M4tier3()
 		   gg.toast("Your current SA58 skin is: League")
 		   gg.setValues(sa)
 		   gg.clearResults()
-		 end			 
-         if SA58t5Change[10] == true then
+		 end		
+		 if SA58t5Change[10] == true then
+			gg.getListItems(sa) sa[1].flags = gg.TYPE_DWORD sa[1].value = "9729"
+			gg.toast("Your current SA58 skin is: Atom Smasher")
+			gg.setValues(sa)
+			gg.clearResults()
+		  end		 
+         if SA58t5Change[11] == true then
            SA58Changer()
          end
        end
@@ -12633,6 +13481,7 @@ function M4tier3()
 		 "Precursor", --8591
 		 "Beach", --8627
 		 "Green Cyber", --8789
+		 "Eaglez",
          "🔙"
        }, nil, (os["date"]([[Select SA58 skin:]])))
        if SA58t4Change == nil then
@@ -12703,7 +13552,13 @@ function M4tier3()
 		   gg.setValues(sa)
 		   gg.clearResults()
 		 end
-         if SA58t4Change[12] == true then
+		 if SA58t4Change[12] == true then
+			gg.getListItems(sa) sa[1].flags = gg.TYPE_DWORD sa[1].value = "9669"
+			gg.toast("Your current SA58 skin is: Eaglez")
+			gg.setValues(sa)
+			gg.clearResults()
+		  end
+         if SA58t4Change[13] == true then
            SA58Changer()
          end
        end
@@ -12772,6 +13627,7 @@ function M4tier3()
 		 "The Watcher",
 		 "Season 7 Master",
 		 "Synethesia",--9519
+		 "Demon Player",
          "🔙"
        }, nil, (os["date"]([[Select Uratio Skin:]])))
        if uratiotier5Change == nil then
@@ -12913,7 +13769,12 @@ function M4tier3()
 		   gg.toast("Your current Uratio skin is: Synethesia")
 		   gg.setValues(ur) gg.clearResults()
 		 end
-         if uratiotier5Change[28] == true then
+		 if uratiotier5Change[28] == true then
+            gg.getListItems(ur) ur[1].flags = gg.TYPE_DWORD ur[1].value = "9673"
+		   gg.toast("Your current Uratio skin is: Demon Player")
+		   gg.setValues(ur) gg.clearResults()
+		 end
+         if uratiotier5Change[29] == true then
            UratioChanger()
          end
        end
@@ -12942,6 +13803,7 @@ function M4tier3()
 				 "Neodream",
 				 "Kintsugi",--9565
 				 "Space Gunner",--9545
+				 "Inferno",
 				 "🔙"
        }, nil, (os["date"]([[Select Uratio Skin:]])))
        if uratiotier4Change == nil then
@@ -13041,7 +13903,12 @@ function M4tier3()
 		   gg.toast("Your current Uratio skin is: Space Gunner")
 		   gg.setValues(ur) gg.clearResults()
 		 end	
-         if uratiotier4Change[20] == true then
+		 if uratiotier4Change[20] == true then
+            gg.getListItems(ur) ur[1].flags = gg.TYPE_DWORD ur[1].value = "9708"
+		   gg.toast("Your current Uratio skin is: Inferno")
+		   gg.setValues(ur) gg.clearResults()
+		 end	
+         if uratiotier4Change[21] == true then
            UratioChanger()
          end
        end
