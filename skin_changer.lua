@@ -6,7 +6,7 @@
  
   
    
-    
+    gg.clearResults()
 gg.setVisible(false)
  
 
@@ -20,7 +20,7 @@ gg.setVisible(false)
  local IsWorking = "yes"
  local ScriptVersionsion = "4.0"
  local HacksEnabled = "no"
- local gun = "0"
+ local gun = "none"
  local ScriptName = "Project Skinz"
  local wenttocheats = "false"
  local searchStatus = "no"
@@ -140,7 +140,7 @@ gg.sleep(1000)
  --Knife
  gg.clearResults()
  gg.setRanges(gg.REGION_ANONYMOUS)
- gg.searchNumber("A8110000A9110000r;A9110000661F0000r;661F0000671F0000r;671F0000681F0000r;681F0000AD110000r;AD110000691F0000r;691F00006A1F0000r",gg.TYPE_QWORD)
+ gg.searchNumber("5900000000000000r;671F0000681F0000r:29",gg.TYPE_QWORD)
  gg.getResults(67)
  gg.refineNumber("671F0000681F0000r",gg.TYPE_QWORD)
  skin = gg.getResults(1)
@@ -149,7 +149,7 @@ gg.sleep(1000)
  
 --T gloves
  gg.clearResults()
- gg.searchNumber("0700000000000000r;00000000B51B0000r;B51B000001000000r;010000003A1A0000r;3A1A000002000000r;0200000000000000r",gg.TYPE_QWORD)
+ gg.searchNumber("0700000000000000r;B51B000001000000r:9",gg.TYPE_QWORD)
  gg.getResults(100)
  gg.refineNumber("B51B000001000000r",gg.TYPE_QWORD)
  t = gg.getResults(1)
@@ -159,7 +159,7 @@ gg.sleep(1000)
  
  --CT gloves
  gg.clearResults()
- gg.searchNumber("0700000000000000r;00000000B51B0000r;B51B000001000000r;010000003A1A0000r;3A1A000002000000r;0200000000000000r",gg.TYPE_QWORD)
+ gg.searchNumber("0700000000000000r;3A1A000002000000r:17",gg.TYPE_QWORD)
  gg.getResults(100)
  gg.refineNumber("3A1A000002000000r",gg.TYPE_QWORD)
  ct = gg.getResults(1)
@@ -168,7 +168,7 @@ gg.sleep(1000)
  gg.toast("『 10% 』")
  
 --Ak47
- gg.searchNumber("A6110000A7110000r;A7110000A8110000r;A8110000A9110000r;A9110000661F0000r;661F0000671F0000r;671F0000681F0000r;681F0000AD110000r",gg.TYPE_QWORD)
+ gg.searchNumber("5900000000000000r;A6110000A7110000r:9",gg.TYPE_QWORD)
 gg.getResults(100)
 gg.refineNumber("A6110000A7110000r",gg.TYPE_QWORD) 
  ak = gg.getResults(1)
@@ -176,7 +176,7 @@ gg.refineNumber("A6110000A7110000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --Uratio
- gg.searchNumber("701F0000711F0000r;711F0000721F0000r;721F0000731F0000r;731F00009C180000r;9C180000741F0000r;741F0000751F0000r;751F0000761F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;731F00009C180000r:81",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("731F00009C180000r",gg.TYPE_QWORD)
  ur = gg.getResults(1)
@@ -184,7 +184,7 @@ gg.refineNumber("731F00009C180000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --GSR 1911
- gg.searchNumber("A6110000A7110000r;A7110000A8110000r;A8110000A9110000r;A9110000661F0000r;661F0000671F0000r;671F0000681F0000r;681F0000AD110000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;A9110000661F0000r:21",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("A9110000661F0000r",gg.TYPE_QWORD)
  gsr = gg.getResults(1)
@@ -193,7 +193,7 @@ gg.refineNumber("A9110000661F0000r",gg.TYPE_QWORD)
   gg.toast("『 20% 』")
  
 --P250
- gg.searchNumber("6B1F00006C1F0000r;6C1F00006D1F0000r;6D1F00006E1F0000r;6E1F00006F1F0000r;6F1F0000701F0000r;701F0000711F0000r;711F0000721F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;6E1F00006F1F0000r:61",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("6E1F00006F1F0000r",gg.TYPE_QWORD)
  p250 = gg.getResults(1)
@@ -201,7 +201,7 @@ gg.refineNumber("6E1F00006F1F0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --M4
- gg.searchNumber("A9110000661F0000r;661F0000671F0000r;671F0000681F0000r;681F0000AD110000r;AD110000691F0000r;691F00006A1F0000r;6A1F00006B1F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;681F0000AD110000r:33",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("681F0000AD110000r",gg.TYPE_QWORD)
  m4 = gg.getResults(1)
@@ -209,7 +209,7 @@ gg.refineNumber("681F0000AD110000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 ---aug
- gg.searchNumber("A6110000A7110000r;A7110000A8110000r;A8110000A9110000r;A9110000661F0000r;661F0000671F0000r;671F0000681F0000r;681F0000AD110000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;A7110000A8110000r:13",gg.TYPE_QWORD) 
 gg.getResults(111)
 gg.refineNumber("A7110000A8110000r",gg.TYPE_QWORD)
  aug = gg.getResults(1)
@@ -218,7 +218,7 @@ gg.refineNumber("A7110000A8110000r",gg.TYPE_QWORD)
  gg.toast("『 30% 』")
  
 --mr96
- gg.searchNumber("AD110000691F0000r;691F00006A1F0000r;6A1F00006B1F0000r;6B1F00006C1F0000r;6C1F00006D1F0000r;6D1F00006E1F0000r;6E1F00006F1F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;6B1F00006C1F0000r:49",gg.TYPE_QWORD) 
  gg.getResults(76) 
  gg.refineNumber("6B1F00006C1F0000r",gg.TYPE_QWORD)
  mr96 = gg.getResults(100)
@@ -226,7 +226,7 @@ gg.refineNumber("A7110000A8110000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --hk417
- gg.searchNumber("A7110000A8110000r;A8110000A9110000r;A9110000661F0000r;661F0000671F0000r;671F0000681F0000r;681F0000AD110000r;AD110000691F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;661F0000671F0000r:25",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("661F0000671F0000r",gg.TYPE_QWORD)
  hk = gg.getResults(100)
@@ -234,7 +234,7 @@ gg.refineNumber("661F0000671F0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --mtx
- gg.searchNumber("691F00006A1F0000r;6A1F00006B1F0000r;6B1F00006C1F0000r;6C1F00006D1F0000r;6D1F00006E1F0000r;6E1F00006F1F0000r;6F1F0000701F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;6C1F00006D1F0000r:53",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("6C1F00006D1F0000r",gg.TYPE_QWORD)
  mtx = gg.getResults(100)
@@ -242,7 +242,7 @@ gg.refineNumber("6C1F00006D1F0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --sa58
- gg.searchNumber("6C1F00006D1F0000r;6D1F00006E1F0000r;6E1F00006F1F0000r;6F1F0000701F0000r;701F0000711F0000r;711F0000721F0000r;721F0000731F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;6F1F0000701F0000r:65",gg.TYPE_QWORD) 
  gg.getResults(466) 
  gg.refineNumber("6F1F0000701F0000r",gg.TYPE_QWORD)
  sa = gg.getResults(100)
@@ -251,7 +251,7 @@ gg.refineNumber("6C1F00006D1F0000r",gg.TYPE_QWORD)
   gg.toast("『 40% 』")
  
 --sg
- gg.searchNumber("6D1F00006E1F0000r;6E1F00006F1F0000r;6F1F0000701F0000r;701F0000711F0000r;711F0000721F0000r;721F0000731F0000r;731F00009C180000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;701F0000711F0000r:69",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("701F0000711F0000r",gg.TYPE_QWORD)
  sg = gg.getResults(100)
@@ -259,7 +259,7 @@ gg.refineNumber("701F0000711F0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --ar-15
- gg.searchNumber("44200000BA200000r;BA20000016210000r;16210000BF210000r;BF2100009E220000r;9E22000019230000r;19230000ED240000r;ED24000000000000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;19230000ED240000r:157",gg.TYPE_QWORD) 
  gg.getResults(488)
  gg.refineNumber("19230000ED240000r",gg.TYPE_QWORD) 
  ar = gg.getResults(1)
@@ -267,7 +267,7 @@ gg.refineNumber("701F0000711F0000r",gg.TYPE_QWORD)
  gg.clearResults()
 
 --fp6
- gg.searchNumber("00000000A6110000r;A6110000A7110000r;A7110000A8110000r;A8110000A9110000r;A9110000661F0000r;661F0000671F0000r;671F0000681F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;A8110000A9110000r:17",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("A8110000A9110000r",gg.TYPE_QWORD)
  fp6 = gg.getResults(100)
@@ -276,7 +276,7 @@ gg.refineNumber("A8110000A9110000r",gg.TYPE_QWORD)
   gg.toast("『 50% 』")
  
 --p90
- gg.searchNumber("6A1F00006B1F0000r;6B1F00006C1F0000r;6C1F00006D1F0000r;6D1F00006E1F0000r;6E1F00006F1F0000r;6F1F0000701F0000r;701F0000711F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;6D1F00006E1F0000r:57",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("6D1F00006E1F0000r",gg.TYPE_QWORD)
  p90 = gg.getResults(100)
@@ -284,7 +284,7 @@ gg.refineNumber("6D1F00006E1F0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --trg
- gg.searchNumber("6F1F0000701F0000r;701F0000711F0000r;711F0000721F0000r;721F0000731F0000r;731F00009C180000r;9C180000741F0000r;741F0000751F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;721F0000731F0000r:77",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("721F0000731F0000r",gg.TYPE_QWORD)
  trg = gg.getResults(100)
@@ -292,7 +292,7 @@ gg.refineNumber("721F0000731F0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --xd45
- gg.searchNumber("721F0000731F0000r;731F00009C180000r;9C180000741F0000r;741F0000751F0000r;751F0000761F0000r;761F0000771F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;741F0000751F0000r:89",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("741F0000751F0000r",gg.TYPE_QWORD)
  xd = gg.getResults(100)
@@ -301,7 +301,7 @@ gg.refineNumber("741F0000751F0000r",gg.TYPE_QWORD)
   gg.toast("『 60% 』")
  
 --deagle
- gg.searchNumber("C61B0000061C0000r;061C00009B1D0000r;9B1D00004D1D0000r;4D1D000043200000r;4320000044200000r;44200000BA200000r;BA20000016210000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;4D1D000043200000r:129",gg.TYPE_QWORD) 
  gg.getResults(664)
  gg.refineNumber("4D1D000043200000r",gg.TYPE_QWORD)
  de = gg.getResults(100)
@@ -310,7 +310,7 @@ gg.refineNumber("741F0000751F0000r",gg.TYPE_QWORD)
  
 --vector
  gg.clearResults()
- gg.searchNumber("711F0000721F0000r;721F0000731F0000r;731F00009C180000r;9C180000741F0000r;741F0000751F0000r;751F0000761F0000r;761F0000771F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;9C180000741F0000r:85",gg.TYPE_QWORD) 
  gg.getResults(466)
  gg.refineNumber("9C180000741F0000r",gg.TYPE_QWORD)
  vr = gg.getResults(100)
@@ -318,7 +318,7 @@ gg.refineNumber("741F0000751F0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --mp5
- gg.searchNumber("671F0000681F0000r;681F0000AD110000r;AD110000691F0000r;691F00006A1F0000r;6A1F00006B1F0000r;6B1F00006C1F0000r;6C1F00006D1F0000r",gg.TYPE_QWORD) 
+ gg.searchNumber("5900000000000000r;691F00006A1F0000r:41",gg.TYPE_QWORD) 
 gg.getResults(100)
 gg.refineNumber("691F00006A1F0000r",gg.TYPE_QWORD)
  mp5 = gg.getResults(100)
@@ -327,7 +327,7 @@ gg.addListItems(mp5)
   gg.toast("『 70% 』")
  
 --mpx
- gg.searchNumber("771F0000781F0000r;781F0000791F0000r;791F0000751B0000r;751B0000C61B0000r;C61B0000061C0000r;061C00009B1D0000r;9B1D00004D1D0000r",gg.TYPE_QWORD)
+ gg.searchNumber("5900000000000000r;751F0000761F0000r:93",gg.TYPE_QWORD)
 gg.getResults(100)
 gg.refineNumber("751B0000C61B0000r",gg.TYPE_QWORD)
  mpx = gg.getResults(100)
@@ -335,7 +335,7 @@ gg.refineNumber("751B0000C61B0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --super90
- gg.searchNumber("6E1F00006F1F0000r;6F1F0000701F0000r;701F0000711F0000r;711F0000721F0000r;721F0000731F0000r;731F00009C180000r;9C180000741F0000r",gg.TYPE_QWORD)
+ gg.searchNumber("5900000000000000r;711F0000721F0000r:73",gg.TYPE_QWORD)
 gg.getResults(100)
 gg.refineNumber("711F0000721F0000r",gg.TYPE_QWORD)
  s90 = gg.getResults(100)
@@ -343,7 +343,7 @@ gg.refineNumber("711F0000721F0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --m14
- gg.searchNumber("661F0000671F0000r;671F0000681F0000r;681F0000AD110000r;AD110000691F0000r;691F00006A1F0000r;6A1F00006B1F0000r;6B1F00006C1F0000r",gg.TYPE_QWORD)
+ gg.searchNumber("5900000000000000r;AD110000691F0000r:37",gg.TYPE_QWORD)
 gg.getResults(100)
 gg.refineNumber("AD110000691F0000r",gg.TYPE_QWORD)
  m14 = gg.getResults(100)
@@ -352,7 +352,7 @@ gg.refineNumber("AD110000691F0000r",gg.TYPE_QWORD)
   gg.toast("『 80% 』")
  
 --m1887
- gg.searchNumber("781F0000791F0000r;791F0000751B0000r;751B0000C61B0000r;C61B0000061C0000r;061C00009B1D0000r;9B1D00004D1D0000r;4D1D000043200000r",gg.TYPE_QWORD)
+ gg.searchNumber("5900000000000000r;C61B0000061C0000r:117",gg.TYPE_QWORD)
 gg.getResults(100)
 gg.refineNumber("C61B0000061C0000r",gg.TYPE_QWORD)
  m18 = gg.getResults(100)
@@ -360,7 +360,7 @@ gg.refineNumber("C61B0000061C0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
 --svd
- gg.searchNumber("791F0000751B0000r;751B0000C61B0000r;C61B0000061C0000r;061C00009B1D0000r;9B1D00004D1D0000r;4D1D000043200000r;4320000044200000r",gg.TYPE_QWORD)
+ gg.searchNumber("5900000000000000r;061C00009B1D0000r:121",gg.TYPE_QWORD)
 gg.getResults(100)
 gg.refineNumber("061C00009B1D0000r",gg.TYPE_QWORD)
  svd = gg.getResults(100)
@@ -368,7 +368,7 @@ gg.refineNumber("061C00009B1D0000r",gg.TYPE_QWORD)
  gg.clearResults()
  
  --mp7
- gg.searchNumber("681F0000AD110000r;AD110000691F0000r;691F00006A1F0000r;6A1F00006B1F0000r;6B1F00006C1F0000r;6C1F00006D1F0000r;6D1F00006E1F0000r",gg.TYPE_QWORD)
+ gg.searchNumber("5900000000000000r;6A1F00006B1F0000r:45",gg.TYPE_QWORD)
 gg.getResults(100)
 gg.refineNumber("6A1F00006B1F0000r",gg.TYPE_QWORD)
 mp7 = gg.getResults(100)
@@ -376,18 +376,43 @@ mp7 = gg.getResults(100)
  gg.clearResults()
  
  --scarh
- gg.searchNumber("19230000ED240000r;ED2400007A250000r;7A25000000000000r:9",gg.TYPE_QWORD)
+ gg.searchNumber("5900000000000000r;ED2400007A250000r:161",gg.TYPE_QWORD)
 gg.getResults(100)
 gg.refineNumber("ED2400007A250000r",gg.TYPE_QWORD)
  scarh = gg.getResults(100)
  gg.addListItems(scarh)
  gg.clearResults()
+ 
 --KSG
-gg.searchNumber("19230000ED240000r;ED2400007A250000r;7A25000000000000r:9",gg.TYPE_QWORD)
+gg.searchNumber("5900000000000000r;7A25000000000000r:165",gg.TYPE_QWORD)
 gg.getResults(100)
 gg.refineNumber("7A25000000000000r",gg.TYPE_QWORD)
  ksg = gg.getResults(100)
  gg.addListItems(ksg)
+ gg.clearResults()
+ 
+ --frag grenade
+ gg.searchNumber("5900000000000000r;771F0000781F0000r:101",gg.TYPE_QWORD)
+ gg.getResults(100)
+ gg.refineNumber("771F0000781F0000r",gg.TYPE_QWORD)
+ frag = gg.getResults(100)
+ gg.addListItems(frag)
+ gg.clearResults()
+ 
+ --flash grenade
+ gg.searchNumber("761F00002B220000r;7A25000000000000r:69",gg.TYPE_QWORD)
+ gg.getResults(100)
+ gg.refineNumber("761F0000771F0000r",gg.TYPE_QWORD)
+ flash = gg.getResults(100)
+ gg.addListItems(flash)
+ gg.clearResults()
+ 
+ --smoke grenade
+ gg.searchNumber("5900000000000000r;791F0000751B0000r:109",gg.TYPE_QWORD)
+ gg.getResults(100)
+ gg.refineNumber("791F0000751B0000r",gg.TYPE_QWORD)
+ smoke = gg.getResults(100)
+ gg.addListItems(smoke)
  gg.clearResults()
  
 
@@ -416,7 +441,7 @@ gg.refineNumber("7A25000000000000r",gg.TYPE_QWORD)
 ------------------------------------------------------------------------------------------------Hacks--------------------------------------------------------------------------------------
 gg.toast("ᴅᴏɴᴇ! ᴡᴇʟᴄᴏᴍᴇ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ!")
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.alert([[													  🔰 Update 1.33.f1870: 🔰
+gg.alert([[													  🔰 Update 1.35.f1997: 🔰
  ➩ Added all Warpaint 2022 skins
  ➩ Added all Tier 3 skins for all grenade types
  ]])
@@ -553,6 +578,7 @@ if gg.isPackageInstalled("sstool.only.com.sstool") then
   os.exit() end
 
  function HOME()
+ gg.clearResults()
  gg.toast('ʙʏ: ᴀʀꜱᴋɪᴢ#3864')
        Mn = gg["multiChoice"]({
          "『🧤』 | sᴋɪɴ ᴄʜᴀɴɢᴇʀ",
@@ -570,30 +596,8 @@ if gg.isPackageInstalled("sstool.only.com.sstool") then
        else
          if Mn[1] == true then
 			if grenadestate == "no" then
---frag grenade
- gg.searchNumber("761F0000771F0000r;771F0000781F0000r;781F0000791F0000r;791F0000751B0000r",gg.TYPE_QWORD)
- gg.getResults(100)
- gg.refineNumber("771F0000781F0000r",gg.TYPE_QWORD)
- frag = gg.getResults(100)
- gg.addListItems(frag)
- gg.clearResults()
- 
- --flash grenade
- gg.searchNumber("761F0000771F0000r;771F0000781F0000r;781F0000791F0000r;791F0000751B0000r",gg.TYPE_QWORD)
- gg.getResults(100)
- gg.refineNumber("761F0000771F0000r",gg.TYPE_QWORD)
- flash = gg.getResults(100)
- gg.addListItems(flash)
- gg.clearResults()
- 
- --smoke grenade
- gg.searchNumber("761F0000771F0000r;771F0000781F0000r;781F0000791F0000r;791F0000751B0000r",gg.TYPE_QWORD)
- gg.getResults(100)
- gg.refineNumber("791F0000751B0000r",gg.TYPE_QWORD)
- smoke = gg.getResults(100)
- gg.addListItems(smoke)
- gg.clearResults()
- grenadestate = "yes"
+gg.toast("Thanks for using the skin changer! 🤗🤗")
+grenadestate = "yes"
 Selector()
 else
 Selector()
@@ -642,8 +646,10 @@ end
 						HacksEnabled = "no"
 						riskystate = " OFF❌"
 						gg.toast("Risky Mode OFF❌")
+						
 					end
-			
+			else
+gg.alert('Canceled')
 				end
 				if settings == nil then
  gg.alert('Canceled') end
@@ -4184,7 +4190,7 @@ function PassS1()
 		 "Vivid Magenta🟠",--9521
 		 "Vivid Green🟠",--9522
 		 "Gold Inlay🟠",--9573
-		 "Kyanite",
+		 "Kyanite🟠",
          "🔙"
        }, nil, (os["date"]([[Select Default knife skin:
 	   🟠 = Tier 7]])))
@@ -4275,7 +4281,7 @@ function PassS1()
 
  function KarambitChanger()
   KarambitChange = gg["multiChoice"]({
-		 "Karambit (No Skin)🔴",
+		 "Default🔴",
 		 "Revolution🟠",
 		 "Cicero🟠",
 		 "Furious🟠",
@@ -4392,7 +4398,7 @@ function PassS1()
 
  function KukriChanger()
   KukriChange = gg["multiChoice"]({
-		 "Kukri (No Skin)🔴",
+		 "Default🔴",
 		 "Polycult🟠",
 		 "Glow🟠",
 		 "Aviary🟠",
@@ -4403,6 +4409,7 @@ function PassS1()
 		 "Triple Attack🟠",
 		 "Waves🟠",
 		 "Patrol🟠",--9554
+		 "New Challenger🟠",--9600
          "🔙"
        }, nil, (os["date"]([[Select Kukri:
 	   🔴 = Tier 6
@@ -4465,6 +4472,11 @@ function PassS1()
 			gg.setValues(skin) gg.clearResults()
 		  end
          if KukriChange[12] == true then
+			gg.getListItems(skin) skin[1].flags = gg.TYPE_DWORD skin[1].value = "9600"
+			gg.toast("Your current Knife skin is: Kukri->New Challenger")
+			gg.setValues(skin) gg.clearResults()
+		  end
+         if KukriChange[13] == true then
            Knife()
          end
        end
@@ -4473,7 +4485,7 @@ function PassS1()
 
  function RemixChanger()
  RemixChange = gg["multiChoice"]({
-		 "Remix (No Skin)🔴",
+		 "Default🔴",
 		 "Hot Rod🟠",
 		 "Wrapped🟠",
 		 "Purple Damascus🟠",
@@ -4651,7 +4663,7 @@ function PassS1()
 		 "Encrypted🟠",
 		 "Baronial🟠",
 		 "Olive🟠",
-		 "Surfdog🟠",
+		 "Surfdog??",
 		 "Acid Rain🟠",
 		 "Sanguinarius🟠",
          "🔙"
@@ -4816,7 +4828,7 @@ function PassS1()
 
  function TomahawkChanger()
   TomahawkChange = gg["multiChoice"]({
-		 "Tomahawk (No Skin)🔴",
+		 "Default🔴",
          "🔙"
        }, nil, (os["date"]([[Select Tomahawk:
 	   🔴 = Tier 6 
@@ -5644,7 +5656,7 @@ function PassS1()
 
 	 function TrenchChanger()
   TrenchChange = gg["multiChoice"]({
-		 "Trench Knife (No Skin)🟠",
+		 "Default🟠",
 		 "Wormhole🟠",
 		 "Stab Mania🟠",
          "🔙"
@@ -5727,7 +5739,7 @@ function PassS1()
 
  function BalisongChanger()
  BalisongChange = gg["multiChoice"]({
-		 "Balisong (No Skin)🔴",
+		 "Default🔴",
 		 "Rime🟠",
 		 "Monarch🟠",
 		 "Crustacean🟠",
@@ -5864,6 +5876,7 @@ function PassS1()
 		 "Red Tail🟠",--14918
 		 "Full Combo🟠",--15140
 		 "Whiff Punish🟠",--15148
+		"Sanguine🟠",
 		 "Navy🟠",
 		 "Kasineeto🟠",
 		 "Pale Knuckle🟠",
@@ -6311,30 +6324,36 @@ function PassS1()
 		   gg.setValues(ct) gg.clearResults()
           end
 		  if GloveCTChange[44] == true then
+            gg.getListItems(ct) ct[1].flags = gg.TYPE_DWORD ct[1].value = "15149"
+              
+		   gg.toast("Your Current Coalition Gloves Are: Sanguine")
+		   gg.setValues(ct) gg.clearResults()
+          end
+ if GloveCTChange[45] == true then
             gg.getListItems(ct) ct[1].flags = gg.TYPE_DWORD ct[1].value = "15292"
               
 		   gg.toast("Your Current Coalition Gloves Are: Navy")
 		   gg.setValues(ct) gg.clearResults()
           end
-		  if GloveCTChange[45] == true then
+		  if GloveCTChange[46] == true then
             gg.getListItems(ct) ct[1].flags = gg.TYPE_DWORD ct[1].value = "15293"
               
 		   gg.toast("Your Current Coalition Gloves Are: Kasineeto")
 		   gg.setValues(ct) gg.clearResults()
           end
-		  if GloveCTChange[46] == true then
+		  if GloveCTChange[47] == true then
             gg.getListItems(ct) ct[1].flags = gg.TYPE_DWORD ct[1].value = "15383"
               
 		   gg.toast("Your Current Coalition Gloves Are: Pale Knuckle")
 		   gg.setValues(ct) gg.clearResults()
           end
-		  if GloveCTChange[47] == true then
+		  if GloveCTChange[48] == true then
             gg.getListItems(ct) ct[1].flags = gg.TYPE_DWORD ct[1].value = "6714" gg.setValues(ct) gg.clearResults()
               
 		   gg.toast("Your Current Coalition Gloves Are: Default")
 		   
           end
-          if GloveCTChange[48] == true then
+          if GloveCTChange[49] == true then
            Selector()
          end
        end
@@ -6386,6 +6405,7 @@ function PassS1()
 		 "Red Tail🟠",--14918
 		 "Full Combo🟠",
 		 "Whiff Punish🟠",--15148
+		"Sanguine🟠",
 		 "Navy🟠",
 		 "Kasineeto🟠",
 		 "Pale Knuckle🟠",
