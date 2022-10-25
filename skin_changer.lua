@@ -229,9 +229,9 @@ gg.setRanges(old)
 ------------------------------------------------------------------------------------------------Hacks--------------------------------------------------------------------------------------
 gg.toast("ᴅᴏɴᴇ! ᴡᴇʟᴄᴏᴍᴇ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ!")
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.alert([[													  🔰 Update 1.35.f1997: 🔰
- ➩ Added all Warpaint 2022 skins
- ➩ Added all Tier 3 skins for all grenade types
+gg.alert([[													  Update:
+ ➩ Added all Operation skins
+ ➩ Added tier 2 & tier 1 for m4
  ]])
  gg.setVisible(true)
   
@@ -757,7 +757,7 @@ end
 	     gg.setValues(skins)
 	
      gg.getListItems(skins)
-	 skins[7].flags = gg.TYPE_DWORD skins[6].value = "9185"
+	 skins[7].flags = gg.TYPE_DWORD skins[7].value = "9185"
 		 gg.setValues(skins)
 	
 	 gg.getListItems(skins)
@@ -765,7 +765,7 @@ end
 		 gg.setValues(skins)
 
 		gg.getListItems(skins)
-			skins[9].flags = gg.TYPE_DWORD skins[9].value = "8608"
+			skins[10].flags = gg.TYPE_DWORD skins[10].value = "8608"
 			   gg.setValues(skins)
 
 			   gg.getListItems(skins)
@@ -892,7 +892,7 @@ end
 			gg.setValues(skins)
 	   
 		gg.getListItems(skins)
-		skins[6].flags = gg.TYPE_DWORD skins[6].value = "1373"
+		skins[7].flags = gg.TYPE_DWORD skins[7].value = "1373"
 			gg.setValues(skins)
 	   
 		gg.getListItems(skins)
@@ -1020,7 +1020,7 @@ end
 				gg.setValues(skins)
 		   
 			gg.getListItems(skins)
-			skins[6].flags = gg.TYPE_DWORD skins[6].value = "8949"
+			skins[7].flags = gg.TYPE_DWORD skins[7].value = "8949"
 				gg.setValues(skins)
 		   
 			gg.getListItems(skins)
