@@ -733,7 +733,7 @@ end
 	     gg.setValues(skins)
 	
      gg.getListItems(skins)
-	 skins[10].flags = gg.TYPE_DWORD  skins[10].value = "865"
+	 skins[9].flags = gg.TYPE_DWORD  skins[9].value = "865"
 	     gg.setValues(skins)
 	
      gg.getListItems(skins)
@@ -757,7 +757,7 @@ end
 	     gg.setValues(skins)
 	
      gg.getListItems(skins)
-	 skins[6].flags = gg.TYPE_DWORD skins[6].value = "9185"
+	 skins[7].flags = gg.TYPE_DWORD skins[6].value = "9185"
 		 gg.setValues(skins)
 	
 	 gg.getListItems(skins)
@@ -765,7 +765,7 @@ end
 		 gg.setValues(skins)
 
 		gg.getListItems(skins)
-			skins[10].flags = gg.TYPE_DWORD skins[10].value = "8608"
+			skins[9].flags = gg.TYPE_DWORD skins[9].value = "8608"
 			   gg.setValues(skins)
 
 			   gg.getListItems(skins)
@@ -800,7 +800,7 @@ end
 			gg.setValues(gloves)
 
 			gg.getListItems(skins)
-			skins[10].flags = gg.TYPE_DWORD skins[10].value = "8608"
+			skins[9].flags = gg.TYPE_DWORD skins[9].value = "8608"
 			   gg.setValues(skins)
 
 		gg.getListItems(skins)
@@ -864,7 +864,7 @@ end
 			gg.setValues(skins)
 	   
 		gg.getListItems(skins)
-		skins[10].flags = gg.TYPE_DWORD  skins[10].value = "752"
+		skins[9].flags = gg.TYPE_DWORD  skins[9].value = "752"
 			gg.setValues(skins)
 	   
 		gg.getListItems(skins)
@@ -928,7 +928,7 @@ end
 				gg.setValues(gloves)
 	
 				gg.getListItems(skins)
-				skins[10].flags = gg.TYPE_DWORD skins[10].value = "6093"
+				skins[9].flags = gg.TYPE_DWORD skins[9].value = "6093"
 				   gg.setValues(skins)
 	
 			gg.getListItems(skins)
@@ -992,7 +992,7 @@ end
 				gg.setValues(skins)
 		   
 			gg.getListItems(skins)
-			skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8374"
+			skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8374"
 				gg.setValues(skins)
 		   
 			gg.getListItems(skins)
@@ -1332,8 +1332,8 @@ else
  end
  if id2[1] and gun == "mp5" then
   gg.getListItems(skins)
-  skins[10].flags = gg.TYPE_DWORD
-  skins[10].value = id2[1]
+  skins[9].flags = gg.TYPE_DWORD
+  skins[9].value = id2[1]
   gg.toast("Skin Set!")
   gg.setValues(skins)
   gg.clearResults()
@@ -1404,8 +1404,8 @@ else
  end
  if id2[1] and gun == "mp7" then
   gg.getListItems(skins)
-  skins[10].flags = gg.TYPE_DWORD
-  skins[10].value = id2[1]
+  skins[9].flags = gg.TYPE_DWORD
+  skins[9].value = id2[1]
   gg.toast("Skin Set!")
   gg.setValues(skins)
   gg.clearResults()
@@ -2949,7 +2949,7 @@ end
 		   gg.clearResults()
          end
 		  if PremiumContent[5] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD skins[10].value = "865"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD skins[9].value = "865"
 		   gg.toast("Your current MP5 skin is: T-Rex")
 		   gg.setValues(skins)
 		   gg.clearResults()
@@ -2991,7 +2991,7 @@ end
 		   gg.clearResults()
          end
 		  if PremiumContent[12] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD skins[10].value = "882"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD skins[9].value = "882"
 		   gg.toast("Your current MP5 skin is: Dandelions")
 		   gg.setValues(skins)
 		   gg.clearResults()
@@ -3141,13 +3141,13 @@ end
 		   gg.clearResults()
          end
 		 if PremiumContent[37] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD skins[10].value = "327"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD skins[9].value = "327"
 		   gg.toast("Your current MP7 skin is: Victorian")
 		   gg.setValues(skins)
 		   gg.clearResults()
          end
 		 if PremiumContent[38] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD skins[10].value = "328"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD skins[9].value = "328"
 		   gg.toast("Your current MP7 skin is: Havoc")
 		   gg.setValues(skins)
 		   gg.clearResults()
@@ -3249,7 +3249,7 @@ end
 		   gg.clearResults()
          end
 		 if PremiumContent[55] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD skins[10].value = "644"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD skins[9].value = "644"
 		   gg.toast("Your current MP5 skin is: Kraken")
 		   gg.setValues(skins)
 		   gg.clearResults()
@@ -3607,7 +3607,7 @@ end
        if Rewind22Content == nil then
        else
 	   if Rewind22Contengloves[3] == true then
-		   gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD skins[10].value = "9439"
+		   gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD skins[9].value = "9439"
 		   gg.toast("Your current MP7 skin is: Spacetime")
 		   gg.setValues(skins)
 		   gg.clearResults()
@@ -3701,7 +3701,7 @@ function PassS1()
 	   end
         if PassS1Content[3] == true then
 
-		   gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD skins[10].value = "452"
+		   gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD skins[9].value = "452"
 		   gg.toast("Your current MP7 skin is: Arctic")
 		   gg.setValues(skins)
 		   gg.clearResults()
@@ -7003,43 +7003,43 @@ function PassS1()
        if MP7tier55 == nil then
        else
          if MP7tier55[1] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "327"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "327"
 		   gg.toast("Your current MP7 skin is: Victorian")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier55[2] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "328"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "328"
 		   gg.toast("Your current MP7 skin is: Havoc")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier55[3] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "4617"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "4617"
 		   gg.toast("Your current MP7 skin is: Toxic")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier55[4] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "4640"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "4640"
 		   gg.toast("Your current MP7 skin is: Under The Sea")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier55[5] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8608"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8608"
 		   gg.toast("Your current MP7 skin is: Proto")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier55[6] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "4628"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "4628"
 		   gg.toast("Your current MP7 skin is: Lupine")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier55[7] == true then
-			gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "9654"
+			gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "9654"
 			gg.toast("Your current MP7 skin is: Retaliation")
 			gg.setValues(skins)
 			gg.clearResults()
@@ -7070,73 +7070,73 @@ function PassS1()
        if MP7tier44 == nil then
        else
          if MP7tier44[1] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "330"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "330"
 		   gg.toast("Your current MP7 skin is: Honeycomb")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[2] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "707"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "707"
 		   gg.toast("Your current MP7 skin is: Nova Alpha")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[3] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "712"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "712"
 		   gg.toast("Your current MP7 skin is: Shatter")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[4] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "713"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "713"
 		   gg.toast("Your current MP7 skin is: Box Cutter")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[5] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "1329"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "1329"
 		   gg.toast("Your current MP7 skin is: Festive")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[6] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "3915"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "3915"
 		   gg.toast("Your current MP7 skin is: Pop Star")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[7] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "3991"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "3991"
 		   gg.toast("Your current MP7 skin is: Mad Science")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[8] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "7166"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "7166"
 		   gg.toast("Your current MP7 skin is: The Sundown")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[9] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8349"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8349"
 		   gg.toast("Your current MP7 skin is: Energy")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[10] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8637"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8637"
 		   gg.toast("Your current MP7 skin is: Citrus Soda")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[11] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "9439"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "9439"
 		   gg.toast("Your current MP7 skin is: Spacetime")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if MP7tier44[12] == true then
-			gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "9719"
+			gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "9719"
 			gg.toast("Your current MP7 skin is: Luna")
 			gg.setValues(skins)
 			gg.clearResults()
@@ -9891,31 +9891,31 @@ function M4tier3()
        if Mp5tier5Change == nil then
        else
          if Mp5tier5Change[1] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "644"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "644"
 		   gg.toast("Your current MP5 skin is: Kraken")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier5Change[2] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "865"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "865"
 		   gg.toast("Your current MP5 skin is: T-Rex")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier5Change[3] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "882"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "882"
 		   gg.toast("Your current MP5 skin is: Dandelions")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier5Change[4] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8138"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8138"
 		   gg.toast("Your current MP5 skin is: Fenrir")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier5Change[5] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8783"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8783"
 		   gg.toast("Your current MP5 skin is: Jazz")
 		   gg.setValues(skins)
 		   gg.clearResults()
@@ -9952,109 +9952,109 @@ function M4tier3()
        if Mp5tier4Change == nil then
        else
          if Mp5tier4Change[1] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "583"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "583"
 		   gg.toast("Your current MP5 skin is: Hot Rod")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[2] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "709"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "709"
 		   gg.toast("Your current MP5 skin is: Fever Dream")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[3] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "751"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "751"
 		   gg.toast("Your current MP5 skin is: Leopard")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[4] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "752"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "752"
 		   gg.toast("Your current MP5 skin is: Synth")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[5] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "897"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "897"
 		   gg.toast("Your current MP5 skin is: Eclipse")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[6] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "4517"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "4517"
 		   gg.toast("Your current MP5 skin is: Code Red")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[7] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "7195"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "7195"
 		   gg.toast("Your current MP5 skin is: Inkan")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[8] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "7529"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "7529"
 		   gg.toast("Your current MP5 skin is: Centipede")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[9] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "7949"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "7949"
 		   gg.toast("Your current MP5 skin is: Weaver")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[10] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8374"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8374"
 		   gg.toast("Your current MP5 skin is: The Croc")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[11] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8626"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8626"
 		   gg.toast("Your current MP5 skin is: Beach")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[12] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8708"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8708"
 		   gg.toast("Your current MP5 skin is: Icy Forest")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[13] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8768"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8768"
 		   gg.toast("Your current MP5 skin is: Breakaway")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[14] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "8931"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "8931"
 		   gg.toast("Your current MP5 skin is: Stheno")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[15] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "9359"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "9359"
 		   gg.toast("Your current MP5 skin is: Jorogumo Yokai")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[16] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "9471"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "9471"
 		   gg.toast("Your current MP5 skin is: Fiery")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[17] == true then
-           gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "7949"
+           gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "7949"
 		   gg.toast("Your current MP5 skin is: Weaver")
 		   gg.setValues(skins)
 		   gg.clearResults()
 		 end
 		 if Mp5tier4Change[18] == true then
-			gg.getListItems(skins) skins[10].flags = gg.TYPE_DWORD  skins[10].value = "9664"
+			gg.getListItems(skins) skins[9].flags = gg.TYPE_DWORD  skins[9].value = "9664"
 			gg.toast("Your current MP5 skin is: Ground Zero")
 			gg.setValues(skins)
 			gg.clearResults()
