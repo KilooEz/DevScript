@@ -4772,7 +4772,7 @@ function PassS1()
 		 "Brass Predator",--9484
 		 "Lionfish",--9562
 		 "Grand Master",
-		 "Aether Chronicle"
+		 "Aether Chronicle",
          "🔙"
        }, nil, (os["date"]([[Select Skin:]])))
        if ScarHTier5Change == nil then
@@ -11882,7 +11882,7 @@ function M4tier3()
 		 "Season 6 Master",
 		 "Invincible", --9481
 		 "Aeon",
-		 "Rumble S3 Champion"
+		 "Rumble S3 Champion",
 		 "Vast Eagle",
          "🔙"
        }, nil, (os["date"]([[Select Deagle skin:]])))
