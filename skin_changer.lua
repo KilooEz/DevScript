@@ -2763,7 +2763,7 @@ end
  end
  
  
- 
+
  function kills()
  if killstate == " ▫ OFF" then
 
@@ -2786,7 +2786,6 @@ end
  end
  
 function deaths()
-
 if deathstate == " ▫ OFF" then
 	gg.searchNumber("hFF 03 01 D1 F4 4F 02 A9 FD 7B 03 A9 FD C3 00 91 94 EA 00 90 88 3A 63 39 F3 03 00 AA E8 01 00 37", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
     gg.getResults(8)
