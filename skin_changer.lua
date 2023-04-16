@@ -1,12 +1,4 @@
-
-
-
-
-
- 
-  
-   
-    gg.clearResults()
+gg.clearResults()
 gg.setVisible(false)
  
 configFile = gg.getFile():gsub("%lua$","").."cfg"
@@ -2757,7 +2749,7 @@ end
        }, nil, (os["date"]("Select:")))
        if stat == nil then
        else
-         if stagloves[3] == true then
+         if stat[3] == true then
            kills()
 		   end
 		 if stat[2] == true then
@@ -2815,106 +2807,106 @@ end
  
  function Premium()
  PremiumContent = gg["multiChoice"]({
-        "Tier 5 - AK-47Havoc", --1
-		"Tier 5 - M14Kraken", --1
-		"Tier 5 - M4Maori", --1
-		"Tier 5 - XD .45Inked", --1
-		"Tier 5 - MP5T-Rex", --1
-		"Tier 5 - GSR 1911Antique", --1
-		"Tier 5 - GSR 1911Dreamcatcher", --1
-		"Tier 5 - M14Antique", --1
-		"Tier 5 - MR-96Splattered", --1
-		"Tier 5 - HK417Oni Demon", --1
-		"Tier 5 - M4Nightmare", --1
-		"Tier 5 - MP5Dandelions", --1
-		"Tier 5 - P90Vice", --1
-		"Tier 5 - AK-47Abduction", --1
-		"Tier 5 - AK-47Polar", --1
-		"Tier 5 - AUGSafari", --1
-		"Tier 5 - TRG 22Shark Attack", --1
-		"Tier 5 - TRG 22Hazardous", --1
-		"Tier 5 - TRG 22Heavy Metal", --1
-		"Tier 5 - VectorDead Men Tell No Tales", --1
-		"Tier 5 - VectorWorms", --1
-		"Tier 5 - VectorCrows", --1
-		"Tier 5 - M1887Black Water", --1
-		"Tier 5 - M1887Koi", --1
-		"Tier 5 - SVDCarbyne", --1
-		"Tier 5 - SVDCorax", --1
-		"Tier 5 - MPXHorus", --1
-		"Tier 5 - MPXGnathos", --1
-		"Tier 5 - DeagleSamurai", --1
-		"Tier 5 - DeagleCavalier", --1
-		"Tier 5 - AK-47Ivory", --1
-		"Tier 5 - AR-15Ouroboros", --1
-		"Tier 5 - SA58Jawbreaker", --1
-		"Tier 5 - FP6Ivory", --1
-		"Tier 5 - SA58Havoc", --1
-		"Tier 5 - UratioVictorian", --1
-		"Tier 5 - MP7Victorian", --1
-		"Tier 5 - MP7Havoc", --1
-		"Tier 5 - AK-47Koi", --1
-		"Tier 5 - AUGNine Lives", --1
-		"Tier 5 - M4Critical Fashion", --1
-		"Tier 5 - M4Super Hexagon", --1
-		"Tier 5 - AUGComic", --1
-		"Tier 5 - AUGButterfly", --1
-		"Tier 5 - SA58Kiss 'N Tell", --1
-		"Tier 5 - Dual MTXRetaliator", --1
-		"Tier 5 - Dual MTXPurgatory", --1
-		"Tier 5 - GSR 1911Spooky", --1
-		"Tier 5 - P90Thunderclap", --1
-		"Tier 5 - P90Maelstorm", --1
-		"Tier 5 - UratioAngry Hands", --1
-		"Tier 5 - SG 551Angry Hands", --1
-		"Tier 5 - Super 90Angry Hands", --1
-		"Tier 5 - P250Phoenix", --1
-		"Tier 5 - MP5Kraken", --1
-		"Tier 5 - HK417Masquerade", --1
-		"Tier 5 - HK417Worms", --1
-		"Tier 5 - P250Peacock", --1
-		"Tier 5 - XD .45La Muerte", --1
-		"Tier 5 - XD .45Masquerade", --1
-		"Tier 5 - M4Valhalla", --1
-		"Tier 5 - MR-96Ivory", --1
-		"Tier 5 - FP6Survival", --1
-		"Tier 5 - AR-15Prestige", --1
-		"Tier 6 - KnifeKukri", --1
-		"Tier 6 - KnifeRemix", --1
-		"Tier 6 - KnifeTactool", --1
-		"Tier 6 - KnifeKarambit", --1
-		"Tier 6 - KnifeTactical Axe", --1
-		"Tier 6 - KnifeBalisong", --1
-		"Tier 7 - KukriPolycult", --1
-		"Tier 7 - KukriMaritime", --1
-		"Tier 7 - KukriGlow", --1
-		"Tier 7 - KukriAviary", --1
-		"Tier 7 - TactoolScythe", --1
-		"Tier 7 - TactoolTigris", --1
-		"Tier 7 - TactoolCatacomb", --1
-		"Tier 7 - TactoolGrandeur", --1
-		"Tier 7 - TactoolScythe", --1
-		"Tier 7 - RemixPorcelain", --1
-		"Tier 7 - RemixPredator", --1
-		"Tier 7 - RemixHot Rod", --1
-		"Tier 7 - RemixPower Surge", --1
-		"Tier 7 - RemixSplit Window", --1
-		"Tier 7 - RemixMeep Meep", --1
-		"Tier 7 - RemixThe Goat", --1
-		"Tier 7 - RemixZuma Beach", --1
-		"Tier 7 - RemixCuda", --1
-		"Tier 7 - RemixShell-B", --1
-		"Tier 7 - KarambitRevolution", --1
+        "Tier 5 - AK-47 Havoc", --1
+		"Tier 5 - M14 Kraken", --1
+		"Tier 5 - M4 Maori", --1
+		"Tier 5 - XD .45 Inked", --1
+		"Tier 5 - MP5 T-Rex", --1
+		"Tier 5 - GSR 1911 Antique", --1
+		"Tier 5 - GSR 1911 Dreamcatcher", --1
+		"Tier 5 - M14 Antique", --1
+		"Tier 5 - MR-96 Splattered", --1
+		"Tier 5 - HK417 Oni Demon", --1
+		"Tier 5 - M4 Nightmare", --1
+		"Tier 5 - MP5 Dandelions", --1
+		"Tier 5 - P90 Vice", --1
+		"Tier 5 - AK-47 Abduction", --1
+		"Tier 5 - AK-47 Polar", --1
+		"Tier 5 - AUG Safari", --1
+		"Tier 5 - TRG 22 Shark Attack", --1
+		"Tier 5 - TRG 22 Hazardous", --1
+		"Tier 5 - TRG 22 Heavy Metal", --1
+		"Tier 5 - Vector Dead Men Tell No Tales", --1
+		"Tier 5 - Vector Worms", --1
+		"Tier 5 - Vector Crows", --1
+		"Tier 5 - M1887 Black Water", --1
+		"Tier 5 - M1887 Koi", --1
+		"Tier 5 - SVD Carbyne", --1
+		"Tier 5 - SVD Corax", --1
+		"Tier 5 - MPX Horus", --1
+		"Tier 5 - MPX Gnathos", --1
+		"Tier 5 - Deagle Samurai", --1
+		"Tier 5 - Deagle Cavalier", --1
+		"Tier 5 - AK-47 Ivory", --1
+		"Tier 5 - AR-15 Ouroboros", --1
+		"Tier 5 - SA58 Jawbreaker", --1
+		"Tier 5 - FP6 Ivory", --1
+		"Tier 5 - SA58 Havoc", --1
+		"Tier 5 - Uratio Victorian", --1
+		"Tier 5 - MP7 Victorian", --1
+		"Tier 5 - MP7 Havoc", --1
+		"Tier 5 - AK-47 Koi", --1
+		"Tier 5 - AUG Nine Lives", --1
+		"Tier 5 - M4 Critical Fashion", --1
+		"Tier 5 - M4 Super Hexagon", --1
+		"Tier 5 - AUG Comic", --1
+		"Tier 5 - AUG Butterfly", --1
+		"Tier 5 - SA58 Kiss 'N Tell", --1
+		"Tier 5 - Dual MTX Retaliator", --1
+		"Tier 5 - Dual MTX Purgatory", --1
+		"Tier 5 - GSR 1911 Spooky", --1
+		"Tier 5 - P90 Thunderclap", --1
+		"Tier 5 - P90 Maelstorm", --1
+		"Tier 5 - Uratio Angry Hands", --1
+		"Tier 5 - SG 551 Angry Hands", --1
+		"Tier 5 - Super 90 Angry Hands", --1
+		"Tier 5 - P250 Phoenix", --1
+		"Tier 5 - MP5 Kraken", --1
+		"Tier 5 - HK417 Masquerade", --1
+		"Tier 5 - HK417 Worms", --1
+		"Tier 5 - P250 Peacock", --1
+		"Tier 5 - XD .45 La Muerte", --1
+		"Tier 5 - XD .45 Masquerade", --1
+		"Tier 5 - M4 Valhalla", --1
+		"Tier 5 - MR-96 Ivory", --1
+		"Tier 5 - FP6 Survival", --1
+		"Tier 5 - AR-15 Prestige", --1
+		"Tier 6 - Knife Kukri", --1
+		"Tier 6 - Knife Remix", --1
+		"Tier 6 - Knife Tactool", --1
+		"Tier 6 - Knife Karambit", --1
+		"Tier 6 - Knife Tactical Axe", --1
+		"Tier 6 - Knife Balisong", --1
+		"Tier 7 - Kukri Polycult", --1
+		"Tier 7 - Kukri Maritime", --1
+		"Tier 7 - Kukri Glow", --1
+		"Tier 7 - Kukri Aviary", --1
+		"Tier 7 - Tactool Scythe", --1
+		"Tier 7 - Tactool Tigris", --1
+		"Tier 7 - Tactool Catacomb", --1
+		"Tier 7 - Tactool Grandeur", --1
+		"Tier 7 - Tactool Scythe", --1
+		"Tier 7 - Remix Porcelain", --1
+		"Tier 7 - Remix Predator", --1
+		"Tier 7 - Remix Hot Rod", --1
+		"Tier 7 - Remix Power Surge", --1
+		"Tier 7 - Remix Split Window", --1
+		"Tier 7 - Remix Meep Meep", --1
+		"Tier 7 - Remix The Goat", --1
+		"Tier 7 - Remix Zuma Beach", --1
+		"Tier 7 - Remix Cuda", --1
+		"Tier 7 - Remix Shell-B", --1
+		"Tier 7 - Karambit Revolution", --1
 		"Tier 7 - Default KnifeCarbon", --1
 		"Tier 7 - Default KnifeTwisted", --1
 		"Tier 7 - Default KnifeShatter", --1
 		"Tier 7 - Default KnifeTianlong", --1
-		"Tier 7 - GlovesShell-B", --1
-		"Tier 7 - GlovesThe Goat ", --1
-		"Tier 7 - GlovesMeep Meep", --1
-		"Tier 7 - GlovesZuma Beach", --1
-		"Tier 7 - GlovesSplit Window", --1
-		"Tier 7 - GlovesCuda", --1
+		"Tier 7 - Gloves Shell-B", --1
+		"Tier 7 - Gloves The Goat ", --1
+		"Tier 7 - Gloves Meep Meep", --1
+		"Tier 7 - Gloves Zuma Beach", --1
+		"Tier 7 - Gloves Split Window", --1
+		"Tier 7 - Gloves Cuda", --1
          "🔙"
        }, nil, (os["date"]("Select Premium Case Skin:")))
        if PremiumContent == nil then
