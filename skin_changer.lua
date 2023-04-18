@@ -26,8 +26,7 @@ configFile = gg.getFile():gsub("%lua$","").."cfg"
 
  if p ~= "com.criticalforceentertainment.criticalops" then
  gg.setVisible(true)
- print('❌This is script is for Critical Ops lol❌')
- os.exit()
+ gg.toast('❌This is script is for Critical Ops ❌')
 end
 
 alerter = gg.alert(WhatsNew, "Okay")
@@ -130,27 +129,27 @@ if gg.isPackageInstalled("sstool.only.com.sstool") then
  gg.toast('ʙʏ: ᴀʀꜱᴋɪᴢ#3864')
        Mn = gg["multiChoice"]({
          "『🧤』ꜱᴋɪɴ ᴄʜᴀɴɢᴇʀ",
-		 "『♻️』ᴄʜᴇᴄᴋ ꜰᴏʀ ᴜᴘᴅᴀᴛᴇ   ",
-		 "『⚙️』ꜱᴇᴛᴛɪɴɢꜱ   ",
-         "『ℹ️』ᴄʀᴇᴅɪᴛꜱ    ",
-         "『🚪』ʟᴇᴀᴠᴇ    "
+		 "『🧤』Chams",
+		 "『♻️』ᴄʜᴇᴄᴋ ꜰᴏʀ ᴜᴘᴅᴀᴛᴇ",
+		 "『⚙️』ꜱᴇᴛᴛɪɴɢꜱ",
+         "『ℹ️』ᴄʀᴇᴅɪᴛꜱ",
+         "『🚪』ʟᴇᴀᴠᴇ"
        }, nil, (os["date"]([[>────────────────< 
 | - ᴄʀᴇᴀᴛᴇᴅ ʙʏ: ᴋɪʟᴏᴏ 
 | - ᴠᴇʀsɪᴏɴ: 1.38.XXXX
 | - ᴍᴏᴅᴇ: 64-ʙɪᴛ
 >────────────────<]])))
        if Mn == nil then
+		gg.toast("Thanks for using the skin changer! 🤗🤗")
        else
          if Mn[1] == true then
-			if grenadestate == "no" then
-gg.toast("Thanks for using the skin changer! 🤗🤗")
-grenadestate = "yes"
-Selector()
-else
-Selector()
-end
-         end    
+			gg.toast("Thanks for using the skin changer! 🤗🤗")
+			Selector()
+		 end 
 		 if Mn[2] == true then
+			Chams()
+		 end
+		 if Mn[3] == true then
 		 gg.toast("Checking.")
 		 gg.sleep(300)
 		 gg.toast("Checking..")
@@ -170,39 +169,29 @@ end
 		 gg.toast("Checking...")
 		 gg.sleep(500)
          gg.toast("Script is up to date!")
-             end
-		if Mn[3] == true then
-			 
-				local settings = gg.prompt({'Risky Mode'..riskystate} ,nil, {[1]='checkbox'})
-			 
-				if settings[1] == true then --1
-					if HacksEnabled == "no" then --2
-						HacksEnabled = "yes"
-						riskystate = " ON✔️"
-						gg.toast("Risky Mode ON️✔️")
-						else
-						HacksEnabled = "no"
-						riskystate = " OFF❌"
-						gg.toast("Risky Mode OFF❌")
-						
-					end
+         end
+		
+		if Mn[4] == true then
+			local settings = gg.prompt({'Nothing'..riskystate} ,nil, {[1]='checkbox'})
+			if settings[1] == true then --1
+			gg.toast("NOTHING")
 			else
-gg.alert('Canceled')
-				end
-				if settings == nil then
- gg.alert('Canceled') end
+			gg.toast('Canceled')
+			end
+			if settings == nil then
+			gg.alert('Canceled')
+		end
  
 		end
 		
-		if Mn[4] == true then
-gg.alert([[
-													ℹ️ Creators ℹ️
-🧤 Arskiz - Skin Changer & Script
-]])
-end
+		if Mn[5] == true then
+			gg.alert([[ℹ️ Creators ℹ️
+			🧤 Arskiz - Skin Changer & Script
+			]])
+		end
 
 		
-         if Mn[5] == true then
+         if Mn[6] == true then
            EXIT()
 			
 			
@@ -210,7 +199,7 @@ end
 		end
        end
        MAINLUA = -1
-     end
+	end
 
  function Selector()
  SkinChange = gg["multiChoice"]({
@@ -1317,7 +1306,7 @@ end
        }, nil, (os["date"]("Select Premium Case Skin:")))
        if PremiumContent == nil then
        else
-		 if PremiumContengloves[3] == true then
+		 if PremiumContent[1] == true then
            gg.getListItems(skins) skins[1].flags = gg.TYPE_DWORD skins[1].value = "324"
 		   gg.toast("Your current AK-47 skin is: Havoc")
 		   gg.setValues(skins)
@@ -2192,52 +2181,52 @@ function PassS1()
 
 
  function Chams()
- if chamsstate == "no" then 
- gg.alert("Select chams. Some chams dont work for some device so test all until you find one that works for you and make sure to set graphics right. ;)") chamsstate = "yes" end
- local chamsselect = gg.prompt({"Chams 1Lowest","Chams 1Ultra","Chams 2Lowest","Chams 2Ultra"}, nil, {[1]="Checkbox", [2]="Checkbox", [3]="Checkbox", [4]="Checkbox"})
- if chamsselect[5] == true then
- gg.setRanges(gg.REGION_VIDEO)
- gg.setVisible(false)
- gg.clearResults()
- gg.searchNumber("1,669,333,010",gg.TYPE_DWORD)
- gg.getResults(10)
- gg.editAll("5",gg.TYPE_DWORD)
- gg.clearResults()
- gg.toast("Lowest Chams enabled")
- end
- if chamsselect[2] == true then
- gg.setRanges(gg.REGION_VIDEO)
-  gg.setVisible(false)
- gg.clearResults()
- gg.searchNumber("1,669,333,011",gg.TYPE_DWORD)
- gg.getResults(10)
- gg.editAll("5",gg.TYPE_DWORD)
- gg.clearResults()
- gg.toast("Ultra Chams enabled")
- end
- if chamsselect[3] == true then
- gg.setRanges(gg.REGION_VIDEO)
- gg.setVisible(false)
- gg.clearResults()
- gg.searchNumber("1,669,333,014",gg.TYPE_DWORD)
- gg.getResults(10)
- gg.editAll("5",gg.TYPE_DWORD)
- gg.clearResults()
- gg.toast("Lowest Chams enabled")
- end
- if chamsselect[4] == true then
- gg.setRanges(gg.REGION_VIDEO)
-  gg.setVisible(false)
- gg.clearResults()
- gg.searchNumber("1,669,333,015",gg.TYPE_DWORD)
- gg.getResults(10)
- gg.editAll("5",gg.TYPE_DWORD)
- gg.clearResults()
- gg.toast("Ultra Chams enabled")
- end
- if chamsselect == nil then 
- gg.alert("Canceled!") end
- end
+	gg.alert("Select chams. Some chams dont work for some device so test all until you find one that works for you and make sure to set graphics right. ;)")
+	local chamsselect = gg.prompt({"Chams 1Lowest","Chams 1Ultra","Chams 2Lowest","Chams 2Ultra"}, nil, {[1]="Checkbox", [2]="Checkbox", [3]="Checkbox", [4]="Checkbox"})
+	if chamsselect[5] == true then
+	gg.setRanges(gg.REGION_VIDEO)
+	gg.setVisible(false)
+	gg.clearResults()
+	gg.searchNumber("1,669,333,010",gg.TYPE_DWORD)
+	gg.getResults(10)
+	gg.editAll("5",gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.toast("Lowest Chams enabled")
+	end
+	if chamsselect[2] == true then
+	gg.setRanges(gg.REGION_VIDEO)
+	 gg.setVisible(false)
+	gg.clearResults()
+	gg.searchNumber("1,669,333,011",gg.TYPE_DWORD)
+	gg.getResults(10)
+	gg.editAll("5",gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.toast("Ultra Chams enabled")
+	end
+	if chamsselect[3] == true then
+	gg.setRanges(gg.REGION_VIDEO)
+	gg.setVisible(false)
+	gg.clearResults()
+	gg.searchNumber("1,669,333,014",gg.TYPE_DWORD)
+	gg.getResults(10)
+	gg.editAll("5",gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.toast("Lowest Chams enabled")
+	end
+	if chamsselect[4] == true then
+	gg.setRanges(gg.REGION_VIDEO)
+	 gg.setVisible(false)
+	gg.clearResults()
+	gg.searchNumber("1,669,333,015",gg.TYPE_DWORD)
+	gg.getResults(10)
+	gg.editAll("5",gg.TYPE_DWORD)
+	gg.clearResults()
+	gg.toast("Ultra Chams enabled")
+	end
+	if chamsselect == nil then 
+		gg.alert("Canceled!")
+	end
+end
 
  function Knife()
  KnifeChange = gg["multiChoice"]({
