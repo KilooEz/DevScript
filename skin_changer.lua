@@ -7,16 +7,13 @@ configFile = gg.getFile():gsub("%lua$","").."cfg"
  local version = "0"
  local ID = "0"
  local result = "1"
- local AntiWorking = "idk"
  local IsUnderMaintenance = "no"
  local IsWorking = "yes"
  local ScriptVersion = "4"
  local gun = "none"
  local ScriptName = "Project Skinz"
- local wenttocheats = "false"
  local searchStatus = "no"
  local chamsstate = "no"
- local grenadestate = "no"
  local Passwords = {"586B22D2DE352","8CE8CF4772EC6","7D9347D47C532","319628CBE3E14","4545"} -- write all your choosen passwords in this tab.
 
 
@@ -33,7 +30,6 @@ configFile = gg.getFile():gsub("%lua$","").."cfg"
  os.exit()
 end
 
-
 alerter = gg.alert(WhatsNew, "Okay")
 
 gg.sleep(500)
@@ -44,12 +40,6 @@ gg.setVisible(false)
 if IsUnderMaintenance ~= "no" then
  gg.toast('⚠️Script is under maintenance, it should be up again in estimated 1-2 hour(s).⚠️')
  os.exit()
-end
-
-
-if HacksEnabled == "no" then
-gg.toast("❌Hacks are disabled, enable them if you want through settings->risky mode❌")
-gg.sleep(1000)
 end
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.toast("Welcome To Version 4.0!")
